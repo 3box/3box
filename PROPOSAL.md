@@ -1,4 +1,4 @@
-#A Proposal for User-Managed Data
+# A Proposal for User-Managed Data
 
 This proposal is to introduce a user-controlled space for dapp-related data storage. Right now dapps that store non-blockchain related data about the user will use a server to do this operated by the dapp.
 
@@ -6,7 +6,7 @@ We propose a server-side service and a client library that will associate an enc
 
 You can explore our code at https://github.com/uport-project/userspace and community at https://chat.uport.me/#/room/#3box:chat.uport.me. If you’re interested in our project, we would love to collaborate. 
 
-##Motivation
+## Motivation
 
 Dapps that want to associate data to their users will eventually need to store data off-chain and link it to the Ethereum address of the user. This kind of data can be for instance a user-chosen username, an email address or settings or preferences that shape the experience of the dapp.
 
@@ -24,7 +24,7 @@ You might consider implementing a user-managed data architecture if you…
 
 * are a wallet/signer dev looking to facilitate a seamless web3 user experience
 
-##Architecture
+## Architecture
 The current architecture is very simple and require no changes to existing wallets or dApp browsers.
 
 The library in the dApp front end will first ask the user to sign a message “Open UserSpace” with the private key corresponding to their current address. This will create a signature S which is returned to the dApp front end. The signature is used as a source of entropy to generate one elliptic curve key pair (k, K) used for authentication and one symmetric key e used for data encryption. The benefit of this method is that it works with Ethereum wallets today without modification. The downside is security - if a malicious dapp asks you to sign this message then this app can steal the private keys needed to download and decrypt your data. In the future it’s possible that Ethereum wallets will have native support for encryption keys in which case the design can be improved.
@@ -33,7 +33,7 @@ The server-side component will associate the authentication key K with an encryp
 
 When retrieving the data from the server the front end downloads the whole database from the server and then decrypts the data in the front end. When querying the database in the dapp only the local database is queried.
 
-###Potential Use Cases
+## Potential Use Cases
 A shared-access, user-managed database can facilitate a cohesive web3 experience between different dapps, devices, browsers, and wallets that choose to collaborate. Here are some ways dapps can collaborate using this technology.
 
 With this technology developers can:
@@ -46,7 +46,7 @@ With this technology developers can:
 * Build richer cross-dapp partnerships and user experiences
 * And more...
 
-##Implementation and Interface
+## Implementation and Interface
 
 We have a github repository here with our first implementation:
 
@@ -60,12 +60,12 @@ set(key, value) - sets {key: value} as a new data entry and pushes it to the ser
 remove(key) - removes the data entry corresponding to the key
 
 
-##Demo
+## Demo
 We also have the following demo that you can play with using a dapp browser like MetaMask:
 
 https://developer.uport.me/userspace/example/
 
-##Future Improvements
+## Future Improvements
 
 Some unresolved questions with the current version:
 
