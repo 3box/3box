@@ -1,2 +1,2 @@
 # 3box
-User-owned cloud storage
+User-Managed Application Data for Web3
