@@ -11,6 +11,11 @@ The root hash tracker is a REST-API that is used to associate an ethereum addres
 
 [*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
 
+### 3box-data-storage-api
+The data storage api is a REST-API that is used to interact with the underlying data storage layer.
+
+[*3box-data-storage specification*](./3BOX-DATA-STORAGE-SCHEME.md)
+
 ### 3box-js
 3box-js is the client side library used to read, write, and delete public and private data associated with the user.
 
