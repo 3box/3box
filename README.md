@@ -1,5 +1,7 @@
 # 3Box
-User-Managed Application Data for Web3
+User-Managed Application Data for Web3.
+
+[3box documents folder](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
 
 ## Technical specification
 3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in `orbit-db` instances. Below are detailed specifications of how they are implemented.
