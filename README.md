@@ -22,6 +22,8 @@ The root hash tracker is a REST-API that is used to associate an ethereum addres
 A high level overview of the 3box architecture. A brief description of all interactions follows below.
 ![Architecture diagram](./3box_architecture_diagram.png)
 
+Each user has their own root ipfs object, and associated data stores. The hash of this object is stored in the `3box-root-hash-tracker`. The root-hash-tracker also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
+
 **A.** The dapp gets the users address from MetaMask (or any web3 compliant browser)
 
 **B.** Dapp request public or private data from the users 3box
