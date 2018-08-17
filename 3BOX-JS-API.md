@@ -1,4 +1,4 @@
-# 3box-root-hash-tracker specification
+# 3box-js api specification
 The implementation of this can be found at [3box-js](https://github.com/uport-project/3box-js)
 
 ## API Description
