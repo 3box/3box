@@ -12,14 +12,14 @@ The implementation of this can be found at [3box-js](https://github.com/uport-pr
 * [3Box](#3Box)
     * [new 3Box(muDID)](#new_3Box_new)
     * _instance_
-        * [.getPrivate(key)](#3Box+getPrivate) ⇒ <code>String</code>
-        * [.setPrivate(key, value)](#3Box+setPrivate) ⇒ <code>Boolean</code>
-        * [.removePrivate(key)](#3Box+removePrivate) ⇒ <code>Boolean</code>
+        * [.getPrivateItem(key)](#3Box+getPrivateItem) ⇒ <code>String</code>
+        * [.setPrivateItem(key, value)](#3Box+setPrivateItem) ⇒ <code>Boolean</code>
+        * [.removePrivateItem(key)](#3Box+removePrivateItem) ⇒ <code>Boolean</code>
         * [.setToProfile(key, value)](#3Box+setToProfile) ⇒ <code>Boolean</code>
-        * [.removeFromProfile(key, value)](#3Box+setToProfile) ⇒ <code>Boolean</code>
+        * [.removeFromProfile(key)](#3Box+removeFromProfile) ⇒ <code>Boolean</code>
     * _static_
         * [.openBox(address)](#3Box.open) ⇒ [<code>3Box</code>](#3Box)
-        * [.getPublicProfile(address)](#3Box.getProfile) ⇒ [<code>3Box</code>](#3Box)
+        * [.getPublicProfile(address)](#3Box.getPublicProfile) ⇒ [<code>3Box</code>](#3Box)
         * [.getPublicActivity(address)](#3Box.getPublicActivity) ⇒ [<code>3Box</code>](#3Box)
 
 <a name="new_3Box_new"></a>
@@ -33,16 +33,21 @@ Instantiates a 3box
 | --- | --- | --- |
 | muDID | <code>MuPort</code> | A MuPort DID instance |
 
-<a name="3Box+getPrivate"></a>
+<a name="3Box+getPrivateItem"></a>
 
-### 3box.getAll() ⇒ <code>Object</code>
-Get all of the items in the 3box in the private data store
+### 3box.getPrivateItem(key) ⇒ <code>String</code>
+Get the value of the given key
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
-**Returns**: <code>Object</code> - an object containing all items
-<a name="3Box+setPrivate"></a>
+**Returns**: <code>String</code> - the value associated with the key
 
-### 3box.setPrivate(key, value) ⇒ <code>Boolean</code>
+| Param | Type | Description |
+| --- | --- | --- |
+| key | <code>String</code> | the key |
+
+<a name="3Box+setPrivateItem"></a>
+
+### 3box.setPrivateItem(key, value) ⇒ <code>Boolean</code>
 Set a value for the given key in the private data store
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
@@ -53,9 +58,9 @@ Set a value for the given key in the private data store
 | key | <code>String</code> | the key |
 | value | <code>String</code> | the value |
 
-<a name="3Box+removePrivate"></a>
+<a name="3Box+removePrivateItem"></a>
 
-### 3box.removePrivate(key) ⇒ <code>Boolean</code>
+### 3box.removePrivateItem(key) ⇒ <code>Boolean</code>
 Remove the value for the given key in the private data store
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
