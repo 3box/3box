@@ -12,11 +12,12 @@ The implementation of this can be found at [3box-js](https://github.com/uport-pr
 * [3Box](#3Box)
     * [new 3Box(muDID)](#new_3Box_new)
     * _instance_
-        * [.getPrivateItem(key)](#3Box+getPrivateItem) ⇒ <code>String</code>
-        * [.setPrivateItem(key, value)](#3Box+setPrivateItem) ⇒ <code>Boolean</code>
-        * [.removePrivateItem(key)](#3Box+removePrivateItem) ⇒ <code>Boolean</code>
-        * [.setToProfile(key, value)](#3Box+setToProfile) ⇒ <code>Boolean</code>
-        * [.removeFromProfile(key)](#3Box+removeFromProfile) ⇒ <code>Boolean</code>
+        * [.private.get(key)](#3Box+get) ⇒ <code>String</code>
+        * [.private.set(key, value)](#3Box+set) ⇒ <code>Boolean</code>
+        * [.private.remove(key)](#3Box+remove) ⇒ <code>Boolean</code>
+        * [.profile.get(key)](#3Box+profileGet) ⇒ <code>String</code>
+        * [.profile.set(key, value)](#3Box+profileSet) ⇒ <code>Boolean</code>
+        * [.profile.remove(key)](#3Box+profileRemove) ⇒ <code>Boolean</code>
     * _static_
         * [.openBox(address)](#3Box.open) ⇒ [<code>3Box</code>](#3Box)
         * [.getPublicProfile(address)](#3Box.getPublicProfile) ⇒ [<code>3Box</code>](#3Box)
@@ -33,9 +34,9 @@ Instantiates a 3box
 | --- | --- | --- |
 | muDID | <code>MuPort</code> | A MuPort DID instance |
 
-<a name="3Box+getPrivateItem"></a>
+<a name="3Box+get"></a>
 
-### 3box.getPrivateItem(key) ⇒ <code>String</code>
+### 3box.private.get(key) ⇒ <code>String</code>
 Get the value of the given key
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
@@ -45,9 +46,9 @@ Get the value of the given key
 | --- | --- | --- |
 | key | <code>String</code> | the key |
 
-<a name="3Box+setPrivateItem"></a>
+<a name="3Box+set"></a>
 
-### 3box.setPrivateItem(key, value) ⇒ <code>Boolean</code>
+### 3box.private.set(key, value) ⇒ <code>Boolean</code>
 Set a value for the given key in the private data store
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
@@ -58,9 +59,9 @@ Set a value for the given key in the private data store
 | key | <code>String</code> | the key |
 | value | <code>String</code> | the value |
 
-<a name="3Box+removePrivateItem"></a>
+<a name="3Box+remove"></a>
 
-### 3box.removePrivateItem(key) ⇒ <code>Boolean</code>
+### 3box.private.remove(key) ⇒ <code>Boolean</code>
 Remove the value for the given key in the private data store
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
@@ -70,7 +71,21 @@ Remove the value for the given key in the private data store
 | --- | --- | --- |
 | key | <code>String</code> | the key |
 
-### 3box.setToProfile(key, value) ⇒ <code>Boolean</code>
+<a name="3Box+profileGet"></a>
+
+### 3box.profile.get(key) ⇒ <code>Boolean</code>
+Get the value for the given key in the public profile
+
+**Kind**: instance method of [<code>3Box</code>](#3Box)
+**Returns**: <code>String</code> - the value associated with the key
+
+| Param | Type | Description |
+| --- | --- | --- |
+| key | <code>String</code> | the key |
+
+<a name="3Box+profileSet"></a>
+
+### 3box.profile.set(key, value) ⇒ <code>Boolean</code>
 Set a value for the given key in the public profile
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
@@ -81,9 +96,9 @@ Set a value for the given key in the public profile
 | key | <code>String</code> | the key |
 | value | <code>String</code> | the value |
 
-<a name="3Box+removeFromProfile"></a>
+<a name="3Box+profileRemove"></a>
 
-### 3box.removeFromProfile(key) ⇒ <code>Boolean</code>
+### 3box.profile.remove(key) ⇒ <code>Boolean</code>
 Remove the value for the given key in the public profile
 
 **Kind**: instance method of [<code>3Box</code>](#3Box)
