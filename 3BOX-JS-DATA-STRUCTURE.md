@@ -15,9 +15,16 @@ The root object is an IPLD formated ipfs object that contains a link to the late
 ```
 
 ### Public profile
-The public profile is an IPLD formated ipfs object that contains the public information about the user such as name and picture.
+The public profile is an IPLD formated ipfs object that contains the public information about the user such as name and picture. We use the Profile scheme from <http://schema.org/>, with extensions by [Blockstack](https://github.com/blockstack/blockstack.js/tree/master/src/profiles), and using IPLD links. We start with just the items `name` and `image`. Note that the `image` field is an array.
 
-TODO - Christian: add the 3box profile schema here.
+```js
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+  "name" : "Christian",
+  "image" : [{"@type": "ImageObject", "contentUrl": {"/" : "QmXXXX"}}].
+}
+```
 
 ### Private data store
 The private data store is an orbit-db KV-store with additional encryption. The encryption scheme for adding a key-value entry would work as follows:
