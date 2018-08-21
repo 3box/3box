@@ -22,12 +22,13 @@ TODO - Christian: add the 3box profile schema here.
 ### Private data store
 The private data store is an orbit-db KV-store with additional encryption. The encryption scheme for adding a key-value entry would work as follows:
 
-* Generate a random salt and store it under the `3BOX_SALT` key.
+* Generate a random salt and store it encrypted (see below) under the `3BOX_SALT` plain text key.
 * Compute the `key` by taking `h(PLAIN_KEY | salt)`
 * Generate a random nonce `n`
+* Add padding to `PLAIN_VALUE` so that its length is a multiple of `24`
 * Compute the ciphertext: `nacl.secretbox(PLAIN_VALUE, n, secretKey)`
-* Encode `value` as `Base64(n).Base64(ciphertext)`
+* Encode `value` as `{ nonce: Base64(n), ciphertext: Base64(ciphertext) }`
 
-We can now store `key` and `value` in the KV-store
+We can now store `key` and `value` in the orbit-db KV-store using the `put` method.
 
 Optionally we can add an index of encrypted keys to the db.
