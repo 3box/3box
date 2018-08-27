@@ -1,19 +1,40 @@
 # 3Box
-User-Managed Application Data for Web3.
+3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by those to whom the user has provided permission. 
 
-[3box documents folder](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
+## Quick Links
 
-## Technical specification
-3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in `orbit-db` instances. Below are detailed specifications of how they are implemented.
+### For Ethereum Users (Coming Soon)
+👤 Create an Ethereum Profile at 3box.io.
 
-### 3box-root-hash-tracker
-The root hash tracker is a REST-API that is used to associate an ethereum address with an ipfs hash.
+### For Ethereum Dapp Developers (Coming soon)
+👩‍💻 Want to integrate 3Box data? [Explore 3box-js](https://www.github.com/uport-project/3box-js)
 
-[*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
+### For Our Community
+👍 Want to collaborate on code? Submit an issue or a PR!  
+🐱 Want to chat with our community or ask questions? [Join our chat!](https://chat.uport.me/#/room/#3box:chat.uport.me)
 
-### 3box-js
+# Goals
+* Make it easy for users to share information publicly, while preserving privacy when desired
+* Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
+* Improve Ethereum scalability and usability with distributed database infrastructure that works in production today
+
+# Components
+3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in `orbit-db` instances.
+
+### 3box-js (3Box Client)
 3box-js is the client side library used to read, write, and delete public and private data associated with the user.
 
 [*3box-js data structure specification*](./3BOX-JS-DATA-STRUCTURE.md)
 
 [*3box-js api specification*](./3BOX-JS-API.md)
+
+### 3box-root-hash-tracker (3Box Server)
+The root hash tracker is a server utilizing a REST-API that is used to associate an Ethereum address with its latest IPFS Root Hash. This is what must be looked up to locate the user's data.
+
+[*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
+
+# Requirements
+* We assume that end users have a web3 provider which supports eth_sign (and encryption?) and that works in the browser
+
+
+[3box documents folder](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
