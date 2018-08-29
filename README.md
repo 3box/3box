@@ -13,7 +13,7 @@
 👍 Want to collaborate on code? Submit an issue or a PR!  
 🐱 Want to chat with our community or ask questions? [Join our chat!](https://chat.uport.me/#/room/#3box:chat.uport.me)
 
-# Goals
+## Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
 * Improve Ethereum usability with distributed database infrastructure that works in production today
