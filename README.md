@@ -19,7 +19,7 @@
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 
 # Components
-3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in `orbit-db` instances.
+3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
 
 ### 3box-js (3Box Client)
 3box-js is the client side library used to read, write, and delete public and private data associated with the user.
