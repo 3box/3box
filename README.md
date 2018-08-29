@@ -34,7 +34,7 @@ The root hash tracker is a server utilizing a REST-API that is used to associate
 [*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
 
 # Requirements
-* We assume that end users have a web3 provider which supports eth_sign (and encryption?) and that works in the browser
+* We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
 
 [3box documents folder](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
