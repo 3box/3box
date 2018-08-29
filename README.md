@@ -24,7 +24,8 @@
 ### Architecture
 A high level overview of the 3box architecture, followed by a brief description.
 
-![Architecture diagram](./3box_architecture_diagram.png)
+![3Box Architecture Diagram](./3box_architecture_diagram.png)
+
 
 Each user has their own root ipfs object, and associated public and private data stores. The hash of this object is stored in the `3box-root-hash-tracker`. The root-hash-tracker also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
 
