@@ -1,5 +1,5 @@
 # 3Box
-3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by those to whom the user has provided permission. 
+3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission.
 
 ## Quick Links
 
@@ -16,7 +16,7 @@
 # Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
-* Improve Ethereum scalability and usability with distributed database infrastructure that works in production today
+* Improve Ethereum usability with distributed database infrastructure that works in production today
 
 # Components
 3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in `orbit-db` instances.
