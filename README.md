@@ -21,7 +21,25 @@
 ## Components
 3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
 
-### Architecture
+### 3box-js (3Box Client)
+3box-js is the client side library used to read, write, and delete public and private data associated with the user.
+
+[*3box-js data structure specification*](./3BOX-JS-DATA-STRUCTURE.md)
+
+[*3box-js api specification*](./3BOX-JS-API.md)
+
+##### Requirements
+* We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
+
+### 3box-root-hash-tracker (3Box Server)
+The root hash tracker is a server utilizing a REST-API that is used to associate an Ethereum address with its latest IPFS Root Hash. This is what must be looked up to locate the user's data.
+
+[*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
+
+### 3box-dapp (3Box Dapp)(Coming Soon)
+The 3box-dapp is how users manage their 3Box data, including profile information and other. Will exist at 3box.io. Coming soon.
+
+## Architecture
 A high level overview of the 3box architecture, followed by a brief description.
 
 ![3Box Architecture Diagram](./3box_architecture_diagram.png)
@@ -44,21 +62,6 @@ Each user has their own root ipfs object, and associated public and private data
 **F.** 3box-js root-hash-tracker interactions
   1. 3box-js publishes the link between ethereum address and DID
   2. 3box-js publishes a new root hash (this is the hash of the latest ipfs object linking to the two orbit-db instances)
-
-### 3box-js (3Box Client)
-3box-js is the client side library used to read, write, and delete public and private data associated with the user.
-
-[*3box-js data structure specification*](./3BOX-JS-DATA-STRUCTURE.md)
-
-[*3box-js api specification*](./3BOX-JS-API.md)
-
-### 3box-root-hash-tracker (3Box Server)
-The root hash tracker is a server utilizing a REST-API that is used to associate an Ethereum address with its latest IPFS Root Hash. This is what must be looked up to locate the user's data.
-
-[*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
-
-## Requirements
-* We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
 
 [3box documents folder](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
