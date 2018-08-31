@@ -32,13 +32,13 @@
 ##### Requirements
 * We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
-### 3box-root-hash-tracker (3Box Server)
+### 3box-hash-server (3Box Server)
 The root hash tracker is a server utilizing a REST-API that is used to associate an Ethereum address with its latest IPFS Root Hash. This is what must be looked up to locate the user's data.
 
-[*3box-root-hash-tracker specification*](./3BOX-ROOT-HASH-TRACKER.md)
+[*3box-hash-server specification*](./3BOX-HASH-SERVER.md)
 
 ### 3box-dapp (3Box Dapp)(Coming Soon)
-The 3box-dapp is how users manage their 3Box data, including profile information and other. Will exist at 3box.io. Coming soon.
+The 3box-dapp is how users manage their 3Box data, including profile information and other. Coming soon to 3box.io.
 
 ## Architecture
 A high level overview of the 3box architecture, followed by a brief description.
@@ -46,7 +46,7 @@ A high level overview of the 3box architecture, followed by a brief description.
 ![3Box Architecture Diagram](./3box_architecture_diagram.png)
 
 
-Each user has their own root ipfs object, and associated public and private data stores. The hash of this object is stored in the `3box-root-hash-tracker`. The root-hash-tracker also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
+Each user has their own root ipfs object, and associated public and private data stores. The hash of this object is stored in the `3box-hash-server`. The hash-server also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
 
 
 **A.** The dapp gets the users address from MetaMask (or any web3 compliant browser)
@@ -61,7 +61,7 @@ Each user has their own root ipfs object, and associated public and private data
 
 **E.** All ipfs data is automatically pinned in the infura ipfs cloud.
 
-**F.** 3box-js root-hash-tracker interactions
+**F.** 3box-js hash-server interactions
   1. 3box-js publishes the link between ethereum address and DID
   2. 3box-js publishes a new root hash (this is the hash of the latest ipfs object linking to the two orbit-db instances)
 
