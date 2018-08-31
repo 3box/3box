@@ -1,10 +1,10 @@
-# 3box-root-hash-tracker specification
-The implementation of this can be found at [3box-root-hash-tracker](https://github.com/uport-project/3box-root-hash-tracker.git)
+# 3box-hash-server specification
+The implementation of this can be found at [3box-hash-server](https://github.com/uport-project/3box-hash-server.git)
 
 ## API Description
 
 
-### Set hash
+### Set 
 
 `POST /hash`
 
