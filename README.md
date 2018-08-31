@@ -19,7 +19,7 @@
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 
 ## Components
-3box consists of two major components `3box-root-hash-tracker` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
+3box consists of two major components `3box-hash-server` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
 
 ### 3box-js (3Box Client)
 3box-js is the client side library used to read, write, and delete public and private data associated with the user.
@@ -33,7 +33,7 @@
 * We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
 ### 3box-hash-server (3Box Server)
-The root hash tracker is a server utilizing a REST-API that is used to associate an Ethereum address with its latest IPFS Root Hash. This is what must be looked up to locate the user's data.
+The Hash Server is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.
 
 [*3box-hash-server specification*](./3BOX-HASH-SERVER.md)
 
