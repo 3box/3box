@@ -24,23 +24,24 @@
 ## Components
 3box consists of two major components `3box-hash-server` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
 
-### 3box-js (3Box Client)
-3box-js is the client side library used to read, write, and delete public and private data associated with the user.
+### 3Box DB
+
+#### 3box JS (Coming Soon)
+'3box-js' is the client side library used to read, write, and delete public and private data associated with the user.
 
 [*3box-js data structure specification*](./3BOX-JS-DATA-STRUCTURE.md)
 
 [*3box-js api specification*](./3BOX-JS-API.md)
 
-
 ##### Requirements
 We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
-### 3box-hash-server (3Box Server)
-The Hash Server is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.
+#### 3box Hash Server(Coming Soon)
+'3box-hash-server' is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.
 
 [*3box-hash-server specification*](./3BOX-HASH-SERVER.md)
 
-### 3box-dapp (3Box Dapp)(Coming Soon)
+### 3box Dapp (Coming Soon)
 The 3box-dapp is how users manage their 3Box data, including profile information and other. Coming soon to 3box.io.
 
 ## Architecture
