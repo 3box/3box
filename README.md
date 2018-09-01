@@ -12,7 +12,6 @@
 ### For Our Community
 👍 Want to collaborate on code? Submit an issue or a PR!  
 🐱 Want to chat with our community or ask questions? [Join our chat!](https://chat.uport.me/#/room/#3box:chat.uport.me)
-
 ➡️ Have you integrated 3Box? [Add yourself to our Dapp Universe!](./COMMUNITY-PROJECTS.md)
 
 ## Goals
@@ -32,7 +31,7 @@
 
 
 ##### Requirements
-* We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
+We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
 ### 3box-hash-server (3Box Server)
 The Hash Server is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.
