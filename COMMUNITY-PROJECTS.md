@@ -9,8 +9,7 @@ To add your project to this list, just submit a PR to this document adding your 
 ### Work
 
 #### Bounties.Network (Ongoing)
-A marketplace for bounties on everything from code to social impact.
-Website: https://www.bounties.network
+A marketplace for bounties on everything from code to social impact. https://www.bounties.network
 
 ### Media
 
