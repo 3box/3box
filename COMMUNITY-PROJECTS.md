@@ -9,6 +9,9 @@ To add your project to this list, just submit a PR to this document adding your 
 ### Work
 
 #### Bounties.Network (Ongoing)
+About: A marketplace for bounties on everything from code to social impact.
+Use Case: User Profiles
+Website: https://www.bounties.network
 
 ### Media
 
