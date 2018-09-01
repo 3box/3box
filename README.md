@@ -7,7 +7,7 @@
 👤 Create an Ethereum Profile at 3box.io.
 
 ### For Ethereum Dapp Developers (Coming soon)
-👩‍💻 Want to integrate 3Box data? [Explore 3box-js](https://www.github.com/uport-project/3box-js)
+👩‍💻 Want to integrate with 3Box? [Explore 3box-js](https://www.github.com/uport-project/3box-js)
 
 ### For Our Community
 👍 Want to collaborate on code? Submit an issue or a PR!  
@@ -24,8 +24,8 @@
 ## 3Box DB (Coming Soon)
 3box DB consists of two major components: `3box-hash-server` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
 
-### 3box JS
-'3box-js' is the client side library used to read, write, and delete public and private data associated with the user.
+### 3Box JS
+`3box-js` is the client side library used to read, write, and delete public and private data associated with the user.
 
 [*3box-js data structure specification*](./3BOX-JS-DATA-STRUCTURE.md)
 
@@ -34,8 +34,8 @@
 ##### Requirements
 We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
-### 3box Hash Server
-'3box-hash-server' is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.
+### 3Box Hash Server
+`3box-hash-server` is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.
 
 [*3box-hash-server specification*](./3BOX-HASH-SERVER.md)
 
