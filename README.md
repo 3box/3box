@@ -22,7 +22,7 @@
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 
 ## 3Box DB (Coming Soon)
-3Box DB consists of two major components: `3box-hash-server` which is a server component and `3box-js` which is a client side library. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
+3Box DB consists of two components: `3box-js` which is a client library, and `3box-hash-server` which is a server. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances.
 
 ### 3Box JS
 [`3box-js`](https://www.github.com/uport-project/3box-js) is the client side library used to read, write, and delete public and private data associated with the user. This library is used to get profile information about an address.
