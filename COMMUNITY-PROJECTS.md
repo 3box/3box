@@ -1,0 +1,17 @@
+# Community Projects
+Welcome to the 3Box Dapp Universe! This repo is dedicated to listing projects that hav integrated 3Box. This list will provide developers with example implementations, and users with a list of dapps that support 3Box.
+
+## Add your Project
+To add your project to this list, just submit a PR to this document adding your project. We will review projects before merging to ensure everything looks good!
+
+### Work
+
+#### Bounties.Network (Ongoing)
+
+### Media
+
+#### Ujo Music (Ongoing)
+
+### HR/Internal Platforms
+
+#### TMNT @ ConsenSys
