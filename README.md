@@ -36,7 +36,7 @@ We assume that end users have a web3-compatible browser or wallet (such as MetaM
 The 3Box dapp is how users manage their 3Box data, including profile information and other. Coming soon to 3box.io.
 
 ### Web App
-[`3box-dapp`](https://www.github.com/uport-project/3box-dapp) is a react native web interface that allows users to interact with 3Box.
+[`3box-dapp`](https://www.github.com/uport-project/3box-dapp) is a web interface that allows users to interact with 3Box.
 
 ### Activity Feed
 [`3box-activity`](https://www.github.com/uport-project/3box-activity) is an API that makes it easy to construct activity feeds for Ethereum users. Part of Ethereum Profiles on the 3Box web app.
