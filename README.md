@@ -29,10 +29,6 @@
 
 We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
-[*Data Model*](./3BOX-JS-DATA-STRUCTURE.md)
-
-[*API Documentation*](./3BOX-JS-API.md)
-
 ### 3Box Hash Server
 [`3box-hash-server`](https://www.github.com/uport-project/3box-hash-server) is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.    
 
