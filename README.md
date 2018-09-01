@@ -12,6 +12,7 @@
 ### For Our Community
 👍 Want to collaborate on code? Submit an issue or a PR!  
 🐱 Want to chat with our community or ask questions? [Join our chat!](https://chat.uport.me/#/room/#3box:chat.uport.me)
+Have you integrated 3Box? [Add yourself to our Dapp Universe!](./COMMUNITY-PROJECTS.md)
 
 ## Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
