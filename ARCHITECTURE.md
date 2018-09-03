@@ -3,12 +3,12 @@
 
 ![3Box Architecture Diagram](./3box_architecture_diagram.png)
 
-### User Model
+## User Model
 Each user has their own root ipfs object, and associated public and private data stores. 
 
 The hash of this object is stored in the `3box-hash-server`. The hash-server also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
 
-### How it Works (Technically)
+## How it Works (Technically)
 **A.** The dapp gets the users address from MetaMask (or any web3 compliant browser)
 
 **B.** Dapp request public or private data from the users 3box
