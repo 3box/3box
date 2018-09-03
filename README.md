@@ -41,6 +41,10 @@ The 3Box dapp is how users manage their 3Box data, including profile information
 ### Web App
 [`3box-dapp`](https://www.github.com/uport-project/3box-dapp) is a web interface that allows users to interact with 3Box.
 
+
+[3Box Dapp UI Prototype](./3box_dapp_prototype_ui_example.png)
+    
+
 ### Activity Feed
 [`3box-activity`](https://www.github.com/uport-project/3box-activity) is an API that makes it easy to construct activity feeds for Ethereum users. Part of Ethereum Profiles on the 3Box web app.
 
