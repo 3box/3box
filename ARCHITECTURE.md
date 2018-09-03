@@ -1,13 +1,10 @@
 # 3Box Architecture
-## Diagram
-
-![3Box Architecture Diagram](./3box_architecture_diagram.png)
-
-
 ## Data Model
 Each user has their own root IPFS object, and associated public and private data stores. As long as the user has access to the hash of the root object, called the 3Box Hash, it can retrieve the entire data store from the IPFS network.
 
 The hash of this object is stored in the `3box-hash-server`. The hash-server also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
+
+![3Box Architecture Diagram](./3box_architecture_diagram.png)
 
 
 ### Root Object
