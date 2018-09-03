@@ -2,7 +2,7 @@
 ![3Box Logo](./3box_widelogo.png)
 3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission.
 
-*This project is under active development. You can follow along in the issues and PRs for each repo related to this project.*
+*This project is under active development.*
 
 ## Quick Links
 
