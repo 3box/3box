@@ -24,22 +24,22 @@
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 
-## 3Box DB (Coming Soon)
-3Box DB consists of two components: `3box-js` which is a client library, and `3box-hash-server` which is a server. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances. Learn more about the [3Box Architecture](./ARCHITECTURE.md).
+## 3Box DB
+3Box DB consists of two components: [`3box-js`](https://www.github.com/uport-project/3box-js) which is a client library, and [`3box-hash-server`](https://www.github.com/uport-project/3box-hash-server) which is a server. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances. Learn more about the [3Box Architecture](./ARCHITECTURE.md).
 
 ### 3Box JS
-[`3box-js`](https://www.github.com/uport-project/3box-js) is the client side library used to read, write, and delete public and private data associated with the user. This library is used to get profile information about an address.
+[`3box-js`](https://www.github.com/uport-project/3box-js) (coming soon) is the client side library used to read, write, and delete public and private data associated with the user. This library is used to get profile information about an address.
 
 We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
 
 ### 3Box Hash Server
 [`3box-hash-server`](https://www.github.com/uport-project/3box-hash-server) is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box Hash. This is what must be looked up to locate the user's data.    
 
-## 3Box Dapp (Coming Soon)
+## 3Box Dapp
 The 3Box dapp is how users manage their 3Box data, including profile information and other. Coming soon to 3box.io.
 
 ### Web App
-[`3box-dapp`](https://www.github.com/uport-project/3box-dapp) is a [web interface](./3box_dapp_prototype_ui_example.png) that allows users to interact with 3Box.
+[`3box-dapp`](https://www.github.com/uport-project/3box-dapp) (coming soon) is a [web interface](./3box_dapp_prototype_ui_example.png) that allows users to interact with 3Box.
     
 
 ### Activity Feed
