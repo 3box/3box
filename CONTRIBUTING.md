@@ -7,7 +7,7 @@ We build very openly so that we can extend the direction of the project to the c
 ### Before You Get Started
 Have you... 
 * Joined 3Box Community, so you can chat with us and other members?
-* abc
+* [Subscribed to the mailing list?](https://mailchi.mp/c671ca2b8093/3box)
 * abc
 
 
