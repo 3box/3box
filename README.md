@@ -4,10 +4,10 @@
 
 ## Quick Links
 
-### Ethereum Users
+### New Users
 👤 Create an Ethereum Profile at 3box.io. (coming soon)
 
-### Ethereum Dapp Developers
+### Dapp Developers
 👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/uport-project/3box-js) (coming soon)
 
 ### 3Box Community  
