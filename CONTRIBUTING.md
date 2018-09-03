@@ -1,7 +1,9 @@
 # How to Contribute
 
-### Important Resources
-* Project Overview
+We build very openly 
+
+### Submitting your First PR
+* Have you read our
 * abc
 * abc
 
