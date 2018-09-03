@@ -14,6 +14,8 @@
 
 🐱 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://mailchi.mp/c671ca2b8093/3box)
 
+📬 Want to receive our newsletter? [Sign up here](https://mailchi.mp/c671ca2b8093/3box)
+
 ➡️ Have you integrated 3Box? [Add yourself to our Dapp Universe!](./COMMUNITY-PROJECTS.md)
 
 ## Goals
