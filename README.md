@@ -4,18 +4,18 @@
 
 ## Quick Links
 
-### For Ethereum Users (Coming Soon)
-👤 Create an Ethereum Profile at 3box.io.
+### Ethereum Users
+👤 Create an Ethereum Profile at 3box.io. (coming soon)
 
-### For Ethereum Dapp Developers (Coming soon)
-👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/uport-project/3box-js)
+### Ethereum Dapp Developers
+👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/uport-project/3box-js) (coming soon)
 
-### For Our Community  
+### 3Box Community  
 💬 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://mailchi.mp/c671ca2b8093/3box)
 
-📬 Want to receive our newsletter? [Sign up here](https://mailchi.mp/c671ca2b8093/3box)
+📬 Want to receive the 3Box newsletter? [Sign up here](https://mailchi.mp/c671ca2b8093/3box)
 
-➡️ Have you integrated 3Box? [Add your dapp to our Dapp Universe!](./COMMUNITY-PROJECTS.md)
+➡️ Have you integrated 3Box? [Add your dapp to 3Box Dapp Universe!](./COMMUNITY-PROJECTS.md)
 
 👍 Want to collaborate on code? Submit an issue or a PR!
 
