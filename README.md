@@ -7,7 +7,7 @@
 👤 Create an Ethereum Profile at 3box.io.
 
 ### For Ethereum Dapp Developers (Coming soon)
-👩‍💻 Want to integrate with 3Box? [Explore 3box-js](https://www.github.com/uport-project/3box-js)
+👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/uport-project/3box-js)
 
 ### For Our Community  
 💬 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://mailchi.mp/c671ca2b8093/3box)
