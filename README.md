@@ -9,14 +9,14 @@
 ### For Ethereum Dapp Developers (Coming soon)
 👩‍💻 Want to integrate with 3Box? [Explore 3box-js](https://www.github.com/uport-project/3box-js)
 
-### For Our Community
-👍 Want to collaborate on code? Submit an issue or a PR!  
-
+### For Our Community  
 💬 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://mailchi.mp/c671ca2b8093/3box)
 
 📬 Want to receive our newsletter? [Sign up here](https://mailchi.mp/c671ca2b8093/3box)
 
-➡️ Have you integrated 3Box? [Add yourself to our Dapp Universe!](./COMMUNITY-PROJECTS.md)
+➡️ Have you integrated 3Box? [Add your dapp to our Dapp Universe!](./COMMUNITY-PROJECTS.md)
+
+👍 Want to collaborate on code? Submit an issue or a PR!
 
 ## Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
