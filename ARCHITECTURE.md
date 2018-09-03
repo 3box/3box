@@ -1,4 +1,5 @@
 # 3Box Architecture
+## Diagram
 
 ![3Box Architecture Diagram](./3box_architecture_diagram.png)
 
