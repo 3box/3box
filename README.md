@@ -19,6 +19,8 @@
 
 ➡️ Have you integrated 3Box? [Add your dapp to 3Box Dapp Universe!](./COMMUNITY-PROJECTS.md)
 
+📝 Want to integrate 3Box? [Answer this brief form! (please)](https://airtable.com/shrDYkQCnzlVUvHGe)
+
 👍 Want to collaborate on code? Submit an issue or a PR!
 
 ## Goals
