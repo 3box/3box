@@ -7,7 +7,7 @@
 ## Join the Chat
 Join the 3Box Community and receive your link to Community HQ
 
-    [![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
+   [![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
 
 ## Getting Started
 
