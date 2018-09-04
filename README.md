@@ -4,7 +4,7 @@
 
 *This project is under active development*
 
--> [![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box) <-
+[![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
 
 ## Quick Links
 
