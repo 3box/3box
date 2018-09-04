@@ -4,9 +4,10 @@
 
 *This project is under active development*
 
+## Build with Us
 [![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
 
-## Quick Links
+## Getting Started
 
 ### New Users
 👤 Create an Ethereum Profile at 3box.io. (coming soon)
