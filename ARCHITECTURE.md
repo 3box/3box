@@ -30,7 +30,10 @@ The public profile is an IPLD formated ipfs object that contains the public info
 ```
 
 ### Private Data Store
-The private data store is an orbit-db KV-store with additional encryption. The encryption scheme for adding a key-value entry would work as follows:
+The private data store is an orbit-db KV-store with additional encryption. 
+
+#### Encryption
+The encryption scheme for adding a key-value entry would work as follows:
 
 * Generate a random salt and store it encrypted (see below) under the `3BOX_SALT` plain text key.
 * Compute the `key` by taking `h(PLAIN_KEY | salt)`
