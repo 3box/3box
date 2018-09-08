@@ -1,5 +1,5 @@
-# 3Box Roadmap
-This document serves as the project roadmap for 3Box.
+# 3Box Sprint Log
+This document serves as the sprint log for 3Box.
 
 ## Past Sprints
 
@@ -38,9 +38,12 @@ Goal: Build a product that we could *almost* release
 
 ☐ [MVP Launch Preparations](https://github.com/uport-project/3box/issues/152)
 
-
 ## Future Sprints
 
 ### Sprint 5
 Goal: Release 3Box MVP
+
+
+
+
 
