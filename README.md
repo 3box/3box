@@ -7,11 +7,13 @@
 
 ![3Box Logo](./3box_widelogo.png)
 
-## Getting Started
+<center>
 
 [![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
 
+</center>
 
+## Getting Started
 ### New Users
 👤 Create an Ethereum Profile at 3box.io. (coming soon)
 
