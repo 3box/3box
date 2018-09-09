@@ -1,17 +1,15 @@
 # 3Box
 ![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=social&label=Follow)
 
-3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission.
-
-*This project is under active development*
+3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. *This project is under active development.*
 
 ![3Box Logo](./3box_widelogo.png)
 
-<center>
+
 
 [![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
 
-</center>
+
 
 ## Getting Started
 ### New Users
