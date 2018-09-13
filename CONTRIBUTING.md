@@ -55,11 +55,10 @@ You can see the objectives for each sprint cycle [here](./SPRINTS.md)
 
 ## Best Practices
 
-## Submitting your First PR
+* Dont leave things in done if you are on the core team, since you have the power to take it to closed!
 
-* Joined 3Box Community, so you can chat with us and other members?
+* Leave closing comments on issues closed but left incomplete or undone, so the community can follow along
 
-
-
-### And Don't Forget To...
 * Submit issues and PRs in the appropriate 3Box repo (we use this one as a project hub)
+
+
