@@ -55,6 +55,8 @@ You can see the objectives for each sprint cycle [here](./SPRINTS.md)
 
 ## Best Practices
 
+[Click here for repo best practices.](./REPO-BEST-PRACTICES.md)
+
 * Dont leave things in done if you are on the core team, since you have the power to take it to closed!
 
 * Leave closing comments on issues closed but left incomplete or undone, so the community can follow along
