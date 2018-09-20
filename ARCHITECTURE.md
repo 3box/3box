@@ -1,12 +1,11 @@
 # 3Box Architecture
 ## Data Model
-Each user has their own root IPFS object, and associated public and private data stores. As long as the user has access to the hash of the root object, called the 3Box Hash, it can retrieve the entire data store from the IPFS network.
 Each user has two data stores. One for public data and one for private data. To keep track of these data stores there is a root store that points to the addresses of the two data stores. The user only needs to have access to the address of the root store in order to fetch all of the database content from both the private and public stores.
 
 When a new database for a user is created in the `3box-js` library a DID is derived from the users ethereum address. A mapping from the ethereum address to the DID and from the DID to the root store address are stored on the `3box-address-server`. This server also pins the ipfs data from the users stores so that it's always available.
 
 
-### Root store
+### Root Store
 The root store is an orbitdb `feed`, basically a list of entries. The `feed` store allows us to add and remove entries. In our case we would add two entries to this feed, one for each store (with the possibility of adding more stores in the future).
 
 The two entries would be the orbitdb addresses for the public and private stores. For example these could look like:
@@ -59,7 +58,7 @@ Here's a technical walkthorough of how the system works.
 
 **E.** `3box-js` sends the orbitdb address of the root store and the profile link to the `3box-address-server`. The server creates an instance of the users stores and syncs them.
 
-**F.** Any updates that are made to any of the stores are replicated on the `3box-address-server` using orbitdb's internal replication system.
+**F.** Any updates that are made to any of the stores are replicated on the `3box-address-server` using orbitdb's internal replication system. This system uses ipfs pubsub to send the data between two ipfs nodes, which means that both nodes have to have the pubsub protocol enabled.
 
 
 ### Accessing user data
@@ -73,7 +72,7 @@ Here's a technical walkthorough of how the system works.
 
 **E.** `3box-js` sends a request to the `3box-address-server` to get the address of the root store.
 
-**D.** `3box-js` syncs the root, private, and public store. Any data in the database can now be accessed.
+**D.** `3box-js` syncs the root, private, and public store using the orbitdb pubsub replication. Any data in the database can now be accessed.
 
 **F.** *Same as above*
 
