@@ -1,36 +1,29 @@
 # 3Box Architecture
 ## Data Model
-Each user has their own root IPFS object, and associated public and private data stores. As long as the user has access to the hash of the root object, called the 3Box Hash, it can retrieve the entire data store from the IPFS network.
+Each user has two data stores. One for public data and one for private data. To keep track of these data stores there is a root store that points to the addresses of the two data stores. The user only needs to have access to the address of the root store in order to fetch all of the database content from both the private and public stores.
 
-The hash of this object is stored in the `3box-hash-server`. The hash-server also stores a mapping from a DID that is created in the `3box-js` library to this hash, as well as a mapping between the users ethereum address to the DID.
-
-![3Box Architecture Diagram](./3box_architecture_diagram.png)
+When a new database for a user is created in the `3box-js` library a DID is derived from the users ethereum address. A mapping from the ethereum address to the DID and from the DID to the root store address are stored on the `3box-address-server`. This server also pins the ipfs data from the users stores so that it's always available.
 
 
-### Root Object
-The root object is an IPLD formated ipfs object that contains a link to the latest hash of the public profile and a link to the latest hash of the private data store. It have the following structure:
+### Root Store
+The root store is an orbitdb `feed`, basically a list of entries. The `feed` store allows us to add and remove entries. In our case we would add two entries to this feed, one for each store (with the possibility of adding more stores in the future).
 
-```js
-{
-  profile: {"/" : "zdpuAufy3hawb25akerURtR81y7D4BKfdxfqbpYZ7cJGjwgFW"},
-  datastore: {"/" : "zdpuAufy3hawb25akerURtR81y7D4BKfdxfqbpYZ7cJGjwgDS"}
-}
+The two entries would be the orbitdb addresses for the public and private stores. For example these could look like:
 ```
+ /orbitdb/Qmd8TmZrWASypEp4Er9tgWP4kCNQnW4ncSnvjvyHQ3EVSU/<user-fingerprint>.public
+```
+for the public store and
+```
+ /orbitdb/Qmd8TmZrWASypEp4Er9tgWP4kCNQnW4ncSnvjvyHQ3EVSU/<user-fingerprint>.private
+```
+for the private store. Here `<user-fingerprint>` is the multihash of the users DID.
+
 
 ### Public Profile
-The public profile is an IPLD formated ipfs object that contains the public information about the user such as name and picture. We use the Profile scheme from <http://schema.org/>, with extensions by [Blockstack](https://github.com/blockstack/blockstack.js/tree/master/src/profiles), and using IPLD links. We start with just the items `name` and `image`. Note that the `image` field is an array.
-
-```js
-{
-  "@context": "http://schema.org/",
-  "@type": "Person",
-  "name" : "Christian",
-  "image" : [{"@type": "ImageObject", "contentUrl": {"/" : "QmXXXX"}}].
-}
-```
+The public profile store is a orbitdb keyvalue-store.
 
 ### Private Data Store
-The private data store is an orbit-db KV-store with additional encryption. 
+The private data store is an orbit-db KV-store with additional encryption.
 
 #### Encryption
 The encryption scheme for adding a key-value entry would work as follows:
@@ -46,23 +39,40 @@ We can now store `key` and `value` in the orbit-db KV-store using the `put` meth
 
 Optionally we can add an index of encrypted keys to the db.
 
-
 ## How it Works
 Here's a technical walkthorough of how the system works.
+
+![3Box Architecture Diagram](./3box_architecture_diagram.png)
+
+### Creating a user profile
 
 **A.** The dapp gets the users address from MetaMask (or any web3 compliant browser)
 
 **B.** Dapp request public or private data from the users 3box
 
-**C.** 3box-js MM interactions
-  1. 3box-js requests consent for storing and retrieving private and public data. The signature is used as key material when creating the 3box DID.
-  2. 3box-js requests consent for linking the public profile to the users ethereum address
+**C.** `3box-js` MM interactions
+  1. `3box-js` requests consent for storing and retrieving private and public data. The signature is used as key material when creating the 3box DID.
+  2. `3box-js` requests consent for linking the public profile to the users ethereum address
 
-**D.** 3box-js stores and retrieves data from ipfs. Using two separate orbit-db instances for public and private data, and a separate ipfs objects which always links to the latest hash of the two orbit-db instances.
+**D.** `3box-js` creates the root, private, and public stores. Then adds data to these stores.
 
-**E.** All ipfs data is automatically pinned in the infura ipfs cloud.
+**E.** `3box-js` sends the orbitdb address of the root store and the profile link to the `3box-address-server`. The server creates an instance of the users stores and syncs them.
 
-**F.** 3box-js hash-server interactions
-  1. 3box-js publishes the link between ethereum address and DID
-  2. 3box-js publishes a new root hash (this is the hash of the latest ipfs object linking to the two orbit-db instances)
+**F.** Any updates that are made to any of the stores are replicated on the `3box-address-server` using orbitdb's internal replication system. This system uses ipfs pubsub to send the data between two ipfs nodes, which means that both nodes have to have the pubsub protocol enabled.
+
+
+### Accessing user data
+
+**A.** *Same as above*
+
+**B.** *Same as above*
+
+**C.** `3box-js` MM interactions
+  1. `3box-js` requests consent for storing and retrieving private and public data. The signature is used as key material when creating the 3box DID.
+
+**E.** `3box-js` sends a request to the `3box-address-server` to get the address of the root store.
+
+**D.** `3box-js` syncs the root, private, and public store using the orbitdb pubsub replication. Any data in the database can now be accessed.
+
+**F.** *Same as above*
 
