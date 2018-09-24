@@ -13,9 +13,14 @@ To view our active work, [view the 3Box project board](https://app.zenhub.com/wo
 
 [Join the 3Box Community](https://mailchi.mp/c671ca2b8093/3box) so you can connect with other developers and the core team on our Discord Chat.
 
-### Report a Bug
+### Report an Issue or Bug
 
-[Copy our Bug Template](./.github/ISSUE_TEMPLATE/bug_report.md) and create a new issue in the appropriate repo using the template.
+[Copy our Issue Template](./.github/ISSUE_TEMPLATE.md) and create a new issue in the appropriate repo:
+
+* [3box-js](https://github.com/uport-project/3box-js/issues/new)
+* [3box-hash-server](https://github.com/uport-project/3box-hash-server/issues/new)
+* [3box-activity](https://github.com/uport-project/3box-activity/issues/new)
+* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new)
 
 ## Tools
 This section contains information about the various tools used by our project.
