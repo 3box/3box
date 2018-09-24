@@ -4,6 +4,11 @@ Each user has two data stores. One for public data and one for private data. To 
 
 When a new database for a user is created in the `3box-js` library a DID is derived from the users ethereum address. A mapping from the ethereum address to the DID and from the DID to the root store address are stored on the `3box-address-server`. This server also pins the ipfs data from the users stores so that it's always available.
 
+### Access Control
+
+The way that access control is done in the 3Box data store is by means of encryption. When the user interacts with a Dapp that needs to access data in the 3Box, a consent message is shown to the user in their Dapp browser (such as for instance [MetaMask](https://metamask.io)), and the user is asked to sign this message with their Ethereum private key. The signature is returned to the Dapp and the entropy in the signature is used to create key material. This key material generates an encryption key and a signing key, which forms a [muPort](https://github.com/uport-project/muport-core-js) identity.
+
+The encryption key is used to decrypt data to allow the Dapp to read the data in the users Private store. The signing key is used to sign requests to the [Hash server](https://github.com/uport-project/3box-hash-server) which will update the users root hash on the server.
 
 ### Root Store
 The root store is an orbitdb `feed`, basically a list of entries. The `feed` store allows us to add and remove entries. In our case we would add two entries to this feed, one for each store (with the possibility of adding more stores in the future).
@@ -75,4 +80,3 @@ Here's a technical walkthorough of how the system works.
 **D.** `3box-js` syncs the root, private, and public store using the orbitdb pubsub replication. Any data in the database can now be accessed.
 
 **F.** *Same as above*
-
