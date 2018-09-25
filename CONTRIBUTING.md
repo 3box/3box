@@ -15,7 +15,7 @@ To view our active work, [view the 3Box project board](https://app.zenhub.com/wo
 
 ### Report an Issue or Bug
 
-[Copy our Issue Template](./.github/ISSUE_TEMPLATE.md) and create a new issue in the appropriate repo:
+Click one of the links below to create a new issue in the appropriate repo:
 
 * [3box-js](https://github.com/uport-project/3box-js/issues/new)
 * [3box-hash-server](https://github.com/uport-project/3box-hash-server/issues/new)
