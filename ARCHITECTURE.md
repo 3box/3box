@@ -6,7 +6,7 @@ When a new database for a user is created in the `3box-js` library a DID is deri
 
 ### Access Control
 
-The way that access control is done in the 3Box data store is by means of encryption. When the user interacts with a Dapp that needs to access data in the 3Box, a consent message is shown to the user in their Dapp browser (such as for instance [MetaMask](https://metamask.io)), and the user is asked to sign this message with their Ethereum private key. The signature is returned to the Dapp and the entropy in the signature is used to create key material. This key material generates an encryption key and a signing key, which forms a [muPort](https://github.com/uport-project/muport-core-js) identity.
+The way that access control is done in the 3Box data store is by means of encryption. When the user interacts with a Dapp that needs to access data in the 3Box, a consent message is shown to the user in their Dapp browser (such as for instance [MetaMask](https://metamask.io)), and the user is asked to sign this message with their Ethereum private key. The signature is returned to the Dapp and the entropy in the signature is used to create key material. This key material generates an encryption key and a signing key.
 
 The encryption key is used to decrypt data to allow the Dapp to read the data in the users Private store. The signing key is used to sign requests to the [Hash server](https://github.com/uport-project/3box-hash-server) which will update the users root hash on the server.
 
