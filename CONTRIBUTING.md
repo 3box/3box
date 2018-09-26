@@ -1,20 +1,29 @@
 # How to Contribute 🛠️
 
-If you want to contribute to the 3Box project you've come to the right place! We build very openly so that we can extend the direction of the project to the community over time. We're excited to have you here building with us. 🎉
+This document provides an overview of how you can contribute to 3Box. We're excited to have you building with us. 🎉
 
 ## Getting Started
+This section contains useful links to get you started building.
 
-### View the 3Box Project Board
+### View the Project Board
 
-To view our active work, [view the 3Box project board](https://app.zenhub.com/workspace/o/uport-project/3box/boards?repos=139279908,146687169,146688532,145592766,145133349)
-or [download the Zenhub browser extension](https://www.zenhub.com/extension).
+To view our active work, [view the 3Box project board](https://app.zenhub.com/workspace/o/uport-project/3box/boards?repos=139279908,146687169,146688532,145592766,145133349) or [download the Zenhub browser extension](https://www.zenhub.com/extension).
 
+### Join the Chat
 
-### Join the 3Box Chat
+[Join the 3Box Community](https://mailchi.mp/c671ca2b8093/3box) so you can connect with other developers and the core team on our Discord Chat.
 
-[**Join the 3Box Community**](https://mailchi.mp/c671ca2b8093/3box) so you can connect with other developers and the core team on our Discord Chat.
+### Report an Issue or Bug
+
+Click one of the links below to create a new issue in the appropriate repo:
+
+* [3box-js](https://github.com/uport-project/3box-js/issues/new)
+* [3box-hash-server](https://github.com/uport-project/3box-hash-server/issues/new)
+* [3box-activity](https://github.com/uport-project/3box-activity/issues/new)
+* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new)
 
 ## Tools
+This section contains information about the various tools used by our project.
 
 ### Issues and Stories
 We use **Github Issues** for individual items of work, such as issues, tasks, and stories. Here's an example.
