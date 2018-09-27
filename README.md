@@ -28,7 +28,7 @@
 
 📝 Want to reach out about a potential integration? [Complete this form!](https://airtable.com/shrDYkQCnzlVUvHGe)
 
-👍 Want to collaborate on code? [View the Guide to Contributing](./CONTRIBUTING.md)
+🛠 Want to collaborate on code? [View the Guide to Contributing](./CONTRIBUTING.md)
 
 ## Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
