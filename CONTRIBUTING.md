@@ -17,10 +17,10 @@ To view our active work, [view the 3Box project board](https://app.zenhub.com/wo
 
 Click one of the links below to create a new issue in the appropriate repo:
 
-* [3box-js](https://github.com/uport-project/3box-js/issues/new)
-* [3box-address-server](https://github.com/uport-project/3box-address-server/issues/new)
-* [3box-activity](https://github.com/uport-project/3box-activity/issues/new)
-* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new)
+* [3box-js](https://github.com/uport-project/3box-js/issues/new?template=bug_report.md)
+* [3box-address-server](https://github.com/uport-project/3box-address-server/issues/new?template=bug_report.md)
+* [3box-activity](https://github.com/uport-project/3box-activity/issues/new?template=bug_report.md)
+* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new?template=bug_report.md)
 
 ## Tools
 This section contains information about the various tools used by our project.
