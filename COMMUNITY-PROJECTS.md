@@ -8,13 +8,20 @@ To add your project to this list, just submit a PR to this document adding your 
 
 ### Work
 
-#### Bounties.Network (Ongoing)
-A marketplace for bounties on everything from code to social impact. https://www.bounties.network
+#### Your Dapp
+Add a sentence or two description of your dapp. Be sure to include a link so visitors can try it out!
 
 ### Media
 
-#### Ujo Music (Ongoing)
+#### Ujo Music
+Ongoing
 
 ### HR/Internal Platforms
 
 #### TMNT @ ConsenSys
+Ongoing
+
+### Asset Tokens
+
+#### Meridio
+Ongoing
