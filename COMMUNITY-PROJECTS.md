@@ -25,3 +25,6 @@ Ongoing
 
 #### Meridio
 Ongoing
+
+#### ipfsUploader
+Ongoing
