@@ -28,3 +28,9 @@ Ongoing
 
 #### ipfsUploader
 Ongoing
+
+Proposed private keys to be used: [ipfsUploader]
+- [ ] ipfsUploader.savedFileList: Array<string> via JSON.stringify
+- [ ] ipfsUploader.savedFile[index]: string = Representing the ipfs file hash
+- [ ] ipfsUploader.savedFile[index].name: string
+- [ ] ipfsUploader.savedFile[index].uploadDate: string
