@@ -11,6 +11,11 @@ To add your project to this list, just submit a PR to this document adding your 
 #### Attestari.me
 [Attestari.me](https://github.com/joaoaguiam/attestari.me) was an ETH SF 2018 Hackathon project built by [@joaoaguiam](https://github.com/joaoaguiam). It allows users to request attestations from others over email.
 
+### File Storage
+
+#### ipfsUploader
+Ongoing @ https://www.github.com/rej156/ipfs-uploader
+
 ### HR/Internal Platforms
 
 #### TMNT @ ConsenSys
@@ -21,5 +26,10 @@ Ongoing
 #### Meridio
 Ongoing
 
-#### ipfsUploader
-Ongoing @ https://www.github.com/rej156/ipfs-uploader
+## Dev Tools
+
+### Frameworks
+
+#### Angular
+[`GrandSchtroumpf/ng-3box`](https://github.com/GrandSchtroumpf/ng-3box): A angular wrapper for `3box-js`. Read the corresponding [blog post](https://medium.com/@GrandSchtroumpf/3box-and-angular-6-994cbde60aa9).
+
