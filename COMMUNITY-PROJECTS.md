@@ -6,22 +6,17 @@ To add your project to this list, just submit a PR to this document adding your 
 
 ## Dapps
 
-### Work
+### Reputation / Web of Trust
 
-#### Your Dapp
-Add a sentence or two description of your dapp. Be sure to include a link so visitors can try it out!
-
-### Media
-
-#### Ujo Music
-Ongoing
+#### Attestari.me
+[Attestari.me](https://github.com/joaoaguiam/attestari.me) was an ETH SF 2018 Hackathon project built by [@joaoaguiam](https://github.com/joaoaguiam). It allows users to request attestations from others over email.
 
 ### HR/Internal Platforms
 
 #### TMNT @ ConsenSys
 Ongoing
 
-### Asset Tokens
+### Tokens
 
 #### Meridio
 Ongoing
