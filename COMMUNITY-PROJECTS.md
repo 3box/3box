@@ -25,3 +25,11 @@ Ongoing
 
 #### Meridio
 Ongoing
+
+## Dev Tools
+
+### Frameworks
+
+#### Angular
+
+[`GrandSchtroumpf/ng-3box`](https://github.com/GrandSchtroumpf/ng-3box): A angular wrapper for `3box-js`
