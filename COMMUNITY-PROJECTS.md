@@ -20,3 +20,6 @@ Ongoing
 
 #### Meridio
 Ongoing
+
+#### ipfsUploader
+Ongoing @ https://www.github.com/rej156/ipfs-uploader
