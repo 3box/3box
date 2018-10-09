@@ -34,6 +34,7 @@
 * Make it easy for users to share information publicly, while preserving privacy when desired
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
 * Improve Ethereum usability with distributed database infrastructure that works in production today
+* Provide a decentralized system, but pragmatically utilize centralized components to facilitate the transition
 
 ## 3Box DB
 3Box DB consists of two components: [`3box-js`](https://www.github.com/uport-project/3box-js) which is a client library, and [`3box-address-server`](https://www.github.com/uport-project/3box-address-server) which is a server. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
