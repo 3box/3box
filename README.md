@@ -3,24 +3,24 @@
 
 3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. *This project is under active development.*
 
-![3Box Logo](./3box_widelogo.png)
+![3Box Logo](3box/3Box_widelogo.png)
 
 
 
-[![button](./3box_button_community.png)](https://mailchi.mp/c671ca2b8093/3box)
+[![button](./3box_button_community.png)](https://discord.gg/Z3f3Cxy)
 
 
 
 ## Getting Started
 ### New Users
-👤 Create an Ethereum Profile at 3box.io. (coming soon)
+👤 Create an Ethereum Profile at [3box.io](https://alpha.3box.io)
 
 ### Dapp Developers
-👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/uport-project/3box-js) (coming soon)
+👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/uport-project/3box-js)
 
 ### 3Box Community  
 
-💬 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://mailchi.mp/c671ca2b8093/3box)
+💬 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://discord.gg/Z3f3Cxy)
 
 📬 Want to receive the 3Box newsletter? [Sign up here](https://mailchi.mp/c671ca2b8093/3box)
 
@@ -42,7 +42,7 @@
 ### 3Box JS
 [`3box-js`](https://www.github.com/uport-project/3box-js) (coming soon) is the client side library used to read, write, and delete public and private data associated with the user. This library is used to get profile information about an address.
 
-We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports eth_sign or personal_sign.
+We assume that end users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports personal_sign.
 
 ### 3Box Address Server
 [`3box-address-server`](https://www.github.com/uport-project/3box-address-server) is a server utilizing a REST-API that is used to associate an Ethereum address with its latest 3Box address. This is what must be looked up to sync the user's data.    
