@@ -45,38 +45,44 @@ We can now store `key` and `value` in the orbit-db KV-store using the `put` meth
 Optionally we can add an index of encrypted keys to the db.
 
 ## How it Works
-Here's a technical walkthorough of how the system works.
+Here's a technical walk thorough of how the system works.
 
 ![3Box Architecture Diagram](./3box_architecture_diagram.png)
 
 ### Creating a user profile
 
-**A.** The dapp gets the users address from MetaMask (or any web3 compliant browser)
+**1.** (A) The dapp gets the users address from MetaMask (or any web3 compliant browser)
 
-**B.** Dapp request public or private data from the users 3box
+**2.** (B) Dapp request to open the users 3box
 
-**C.** `3box-js` MM interactions
-  1. `3box-js` requests consent for storing and retrieving private and public data. The signature is used as key material when creating the 3box DID.
-  2. `3box-js` requests consent for linking the public profile to the users ethereum address
+**3.** (C) `3box-js` request consent to open the box from the user. This is done by using the entropy from the signature to create a signing and an encryption key.
 
-**D.** `3box-js` creates the root, private, and public stores. Then adds data to these stores.
+**4.** (D) `3box-js` creates the root, private, and public stores. Then dapp can then add data to these stores (B). The first time public data is added another request for consent is requested from the user, to link their ethereum address to their 3Box (C).
 
-**E.** `3box-js` sends the orbitdb address of the root store and the profile link to the `3box-address-server`. The server creates an instance of the users stores and syncs them.
+**5.** (E) `3box-js` sends the orbitdb address of the root store and the consent to make their profile public to the `3box-address-server`. It also sends the orbitdb address of the root store to the `3box-pinning-server` (F) over ipfs pubsub.
 
-**F.** Any updates that are made to any of the stores are replicated on the `3box-address-server` using orbitdb's internal replication system. This system uses ipfs pubsub to send the data between two ipfs nodes, which means that both nodes have to have the pubsub protocol enabled.
+**6.** (F) Any updates that are made to any of the stores are replicated on the `3box-pinning-server` using orbitdb's internal replication system. This system uses ipfs pubsub to send the data between two ipfs nodes, which means that both nodes have to have the pubsub protocol enabled.
 
 
 ### Accessing user data
 
-**A.** *Same as above*
+**1.** *Same as above*
 
-**B.** *Same as above*
+**2.** *Same as above*
 
-**C.** `3box-js` MM interactions
-  1. `3box-js` requests consent for storing and retrieving private and public data. The signature is used as key material when creating the 3box DID.
+**3.** *Same as above*
 
-**E.** `3box-js` sends a request to the `3box-address-server` to get the address of the root store.
+**4.** `3box-js` opens the orbitdb stores, sends the root store address to the `3box-pinning-server` (F) and replicates the db data from the `3box-pinning-server` (G).
 
-**D.** `3box-js` syncs the root, private, and public store using the orbitdb pubsub replication. Any data in the database can now be accessed.
+**5.** The dapp gets data from the box object (B).
 
-**F.** *Same as above*
+
+### Getting a profile of an ethereum address
+
+**1.** (B) Dapp requests to get profile of an ethereum address
+
+**2.** (E) `3box-js` requests the orbitdb address of the given ethereum address from the `3box-address-server`
+
+**3.** `3box-js` opens the orbitdb stores, sends the root store address to the `3box-pinning-server` (F) and replicates the db data from the `3box-pinning-server` (G).
+
+**4.** `3box-js` returns the user profile to the dapp (B)
