@@ -15,12 +15,23 @@ To view our active work, [view the 3Box project board](https://app.zenhub.com/wo
 
 ### Report an Issue or Bug
 
+Some guidelines for reporting bugs:
+
+- Make sure that your issue is caused by the corresponding 3box library and not your application code.
+- Create a simple and minimal test case that demonstrates the bug.
+- Search the issues to see if the bug has already been reported. If it has, add any additional details in the comments.
+- Write a descriptive and specific title.
+- Include browser, OS, 3box library version and any other details specific to the environment.
+- Check whether the bug can be reproduced in other environments (ie. other browsers).
+
 Click one of the links below to create a new issue in the appropriate repo:
 
-* [3box-js](https://github.com/uport-project/3box-js/issues/new?template=bug_report.md)
-* [3box-address-server](https://github.com/uport-project/3box-address-server/issues/new?template=bug_report.md)
-* [3box-activity](https://github.com/uport-project/3box-activity/issues/new?template=bug_report.md)
-* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new?template=bug_report.md)
+* [3box-js](https://github.com/uport-project/3box-js/issues/new)
+* [3box-hash-server](https://github.com/uport-project/3box-hash-server/issues/new)
+* [3box-activity](https://github.com/uport-project/3box-activity/issues/new)
+* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new)
+
+Before submitting your changes run `npm run lint` to find any formatting issues that don't adhere to the original codebase.
 
 ## Tools
 This section contains information about the various tools used by our project.
