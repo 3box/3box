@@ -26,10 +26,10 @@ Some guidelines for reporting bugs:
 
 Click one of the links below to create a new issue in the appropriate repo:
 
-* [3box-js](https://github.com/uport-project/3box-js/issues/new)
-* [3box-hash-server](https://github.com/uport-project/3box-hash-server/issues/new)
-* [3box-activity](https://github.com/uport-project/3box-activity/issues/new)
-* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new)
+* [3box-js](https://github.com/uport-project/3box-js/issues/new?template=bug_report.md)
+* [3box-address-server](https://github.com/uport-project/3box-address-server/issues/new?template=bug_report.md)
+* [3box-activity](https://github.com/uport-project/3box-activity/issues/new?template=bug_report.md)
+* [3box-dapp](https://github.com/uport-project/3box-dapp/issues/new?template=bug_report.md)
 
 Before submitting your changes run `npm run lint` to find any formatting issues that don't adhere to the original codebase.
 
