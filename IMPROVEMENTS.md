@@ -5,3 +5,5 @@ This section contains requested improvements to 3Box. They're definitely importa
 * Decentralize [`3box-address-server`](https://www.github.com/uport-project/3box-address-server)
 
 * Improve access control to the private data store
+
+You can view our 6-month roadmap as of November 2018 [here](https://medium.com/3box/3box-roadmap-the-next-6-months-d803a59005a4)
