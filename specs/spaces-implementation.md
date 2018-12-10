@@ -26,7 +26,7 @@ The new space will be available as a keyValueStore as follows:
 
 ## Key management
 
-We add a new class to 3box-js called Keyring. This class can hold any number of (signing-key-pair, symmetric encryption-key) tuples. It also provides methods to symmetrically encrypt data. We can base it loosely on the keyring in muport-core, but lets use [https://www.npmjs.com/package/hdkey](https://www.npmjs.com/package/hdkey) instead of ethereumjs-wallet (it uses hdkey internally, we only need that functionallity).
+We add a new class to 3box-js called Keyring. This class can hold any number of (signing-key-pair, symmetric encryption-key) tuples. It also provides methods to symmetrically encrypt data. We can base it loosely on the keyring in muport-core, but lets use [https://www.npmjs.com/package/ethers](https://www.npmjs.com/package/ethers) instead of ethereumjs-wallet (we need to make sure that it is compatible, but it should be).
 
 **Key derivation paths**
 
