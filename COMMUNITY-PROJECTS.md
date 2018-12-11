@@ -26,6 +26,11 @@ Ongoing
 #### Meridio
 Ongoing
 
+### Self-sovereign references
+
+#### Linkedref.io
+[Linkedref.io](https://github.com/IMRFeng/3box_integration_repo) was an ConsenSys Academy project built by [@IMRFeng](https://github.com/IMRFeng). It enables users to manage their references in a much easier and accessible way.
+
 ## Dev Tools
 
 ### Frameworks
