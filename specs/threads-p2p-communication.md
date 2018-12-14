@@ -75,6 +75,13 @@ await thread.post(<json-object>)
 await thread.addUser(<eth-addr|muport-did>) 
 ```
 
+**Show users in thread:**
+
+Returns an array of `muport-did`s
+```js
+const userList = await thread.users() 
+```
+
 **Reading a thread:**
 
 We can probably design this similar to the [orbitdb feed iterator](https://github.com/orbitdb/orbit-db/blob/master/API.md#iteratoroptions-1). 
