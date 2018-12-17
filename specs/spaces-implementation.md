@@ -46,6 +46,12 @@ Salt entropy: `BASE_PATH/4`
 
 ## Additional stores
 
-When adding a new store we will simply create an orbitdb kv-store with the name `space.<name>.<mode>` e.g. `space.ujo.public`, `space.bounties.private`. The orbitdb-address of the created store is added to the rootStore.
+When adding a new store we will simply create an orbitdb kv-store with the name `space.<name>.<mode>` e.g. `space.ujo.public`, `space.bounties.private`. The orbitdb-address of the created store is added to the rootStore. We also add the public encryption key of the space to the rootStore entry. This is not needed right away but results in flexibility for the future. The rootStore entry should look like this:
+```js
+{
+  odbAddress: <orbitdb address of the space>,
+  pubEncKey: <public encryption key derived above>
+}
+```
 
 We have a research story for creating a better private kv-store that encrypts the keys instead of hashing them. If the research result is positive we should use that for the private spaces.
