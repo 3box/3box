@@ -29,6 +29,7 @@
 
 ➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./COMMUNITY-PROJECTS.md)
 
+<br>
 
 # 3Box Overview
 The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/3box-js), a distributed user data network, and the [3Box Profiles App](https://3box.io).
