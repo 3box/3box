@@ -1,10 +1,9 @@
+![3Box Logo](./3Box_widelogo.png)
+
 # 3Box
 ![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=social&label=Follow)
 
-3Box is a distributed database that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission.
-
-![3Box Logo](./3Box_widelogo.png)
-
+3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) and a web3 [developer API](https://github.com/3box/3box-js).
 
 
 [![button](./3box_button_community.png)](https://discord.gg/dxjM74J)
@@ -12,23 +11,21 @@
 
 
 ## Getting Started
-### New Users
-👤 Create an Ethereum Profile at [3box.io](https://3box.io)
+### Dapp Users
+👤 Create or sign in to your web3 social profile at [3box.io](https://3box.io)
 
 ### Dapp Developers
-👩‍💻 Want to integrate with 3Box? [Explore `3box-js`](https://www.github.com/3box/3box-js)
+👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate with 3Box
 
 ### 3Box Community  
 
-💬 Want to chat with our community or ask questions? [Join 3Box Community HQ](https://discord.gg/Z3f3Cxy)
+💬 Join [3Box Community Discord](https://discord.gg/Z3f3Cxy) to chat with the core team and developer community
 
-📬 Want to receive the 3Box newsletter? [Sign up here](https://mailchi.mp/c671ca2b8093/3box)
+📬 Sign up to [receive our newsletter](https://mailchi.mp/c671ca2b8093/3box)
 
-➡️ Have you integrated 3Box? [Add your dapp to 3Box Dapp Universe!](./COMMUNITY-PROJECTS.md)
+🛠 Want to contribute to the project? View our [contributors guide](./CONTRIBUTING.md)
 
-📝 Want to reach out about a potential integration? [Complete this form!](https://airtable.com/shrDYkQCnzlVUvHGe)
-
-🛠 Want to collaborate on code? [View the Guide to Contributing](./CONTRIBUTING.md)
+➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./COMMUNITY-PROJECTS.md)
 
 ## Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
