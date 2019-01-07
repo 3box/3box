@@ -10,15 +10,15 @@
 
 
 
-## Getting Started
+### Getting Started
 
-### Users
+#### Users
 👤 Create or sign in to your web3 social profile at [3box.io](https://3box.io)
 
-### Developers
+#### Developers
 👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate 3Box with your Ethereum dapp
 
-### Community  
+#### Community  
 
 💬 Join [3Box Community Discord](https://discord.gg/Z3f3Cxy) to chat with the core team and developer community
 
