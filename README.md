@@ -6,7 +6,7 @@
 3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users and set/get data from their profile.
 
 
-[![button](./3box_button_community.png)](https://discord.gg/dxjM74J)
+<p align="center"> [![button](./3box_button_community.png)](https://discord.gg/dxjM74J) </p>
 
 
 
