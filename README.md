@@ -36,8 +36,8 @@
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 * Provide a decentralized system, but pragmatically utilize centralized components to facilitate the transition
 
-## 3Box DB
-3Box DB consists of two components: [`3box-js`](https://www.github.com/3box/3box-js) which is a client library, and [`3box-address-server`](https://www.github.com/3box/3box-address-server) which is a server. Together they are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
+## 3Box User Data Network
+The 3Box data network consists of a few main components: [`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library that allows applications to integrate with the 3Box network; [`3box-pinning-server`](https://www.github.com/3box/3box-pinning-server) is a service that pins user data on the IPFS network to ensure availability; and [`3box-address-server`](https://www.github.com/3box/3box-address-server) is a service that maps an Ethereum address to its decentralized identifier (DID) to which data is addressed. Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
 
 ### 3Box JS
 [`3box-js`](https://www.github.com/3box/3box-js) is the client side library used to read, write, and delete public and private data associated with the user. This library is used to get profile information about an address.
