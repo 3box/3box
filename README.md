@@ -40,7 +40,7 @@ The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
 
 ## 3Box Data Network
-The 3Box user data network consists of a few core components: the [pinning server](https://www.github.com/3box/3box-pinning-server), the [address server](https://www.github.com/3box/3box-address-server), and a [caching service](https://www.github.com/3box/3box-caching-service). Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances on IPFS. 
+The 3Box user data network consists of a few core components: a [pinning server](https://www.github.com/3box/3box-pinning-server) and an [address server](https://www.github.com/3box/3box-address-server). Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances on IPFS. 
 
 We assume that end-users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports personal_sign. This is how users authenticate dapps to their 3Box. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
 
