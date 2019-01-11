@@ -63,7 +63,7 @@ The [3box.io](https://3box.io) dapp is how users manage their 3Box data, includi
 [`3box-activity`](https://www.github.com/3box/3box-activity) is an API that makes it easy to construct activity feeds for Ethereum users. Part of Ethereum Profiles on the 3Box web app.
 
 ### 3Box Verifications
-[`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their Github and Twitter social accounts and link them to their 3Box profile.
+[`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their Github and Twitter social accounts and link them to their 3Box profile. The verifications issued by this service are DID-compatible verifiable claims in the form of JWTs.
 
 <br>
 
