@@ -45,7 +45,7 @@ The 3Box user data network consists of a few core components: a [pinning server]
 We assume that end-users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports personal_sign. This is how users authenticate dapps to their 3Box. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
 
 ### 3Box Pinning Server
-[`3box-pinning-server`](https://www.github.com/3box/3box-pinning-server) is a service operated by 3Box that pins 3Box user data on the IPFS network to ensure availability. In the future this service will become more decentralized with a network of pinning nodes, allowing others to run their own node and host their own data if desired.
+[`3box-pinning-server`](https://www.github.com/3box/3box-pinning-server) is a service operated by 3Box that pins 3Box user data on the IPFS network to ensure availability. Optionally, others can also run their own instance of the pinning-server to replicate the user data stored in the 3box network. In the future, this service will become more decentralized with a network of pinning nodes, allowing others to run their own node and host their own data if desired. 
 
 ### 3Box Address Server
 [`3box-address-server`](https://www.github.com/3box/3box-address-server) is a server utilizing a REST API that is used to associate an Ethereum address with its 3Box DID (decentralized identifier), to which all user data is addressed. This is what must be looked up to retrieve and sync the user's data. In the future this service will become more decentralized by putting this address to DID mapping on-chain.
