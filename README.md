@@ -40,7 +40,7 @@ The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
 
 ## 3Box Data Network
-The 3Box user data network consists of a few core components: a [pinning server](https://www.github.com/3box/3box-pinning-server) and an [address server](https://www.github.com/3box/3box-address-server). Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances on IPFS. 
+The 3Box user data network consists of a few core components: a data [pinning server](https://www.github.com/3box/3box-pinning-server), an [address server](https://www.github.com/3box/3box-address-server), and an [identity model](https://github.com/3box/muport-core-js). Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances on IPFS. 
 
 We assume that end-users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports personal_sign. This is how users authenticate dapps to their 3Box. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
 
@@ -52,9 +52,6 @@ We assume that end-users have a web3-compatible browser or wallet (such as MetaM
 
 ### 3Box Identity
 [`muport-core-js`](https://github.com/3box/muport-core-js) is a library that lets us associate a users 3Box and data with a lightweight muport DID (decentralized identity) rather than directly to an Ethereum address. This abstraction allows our system to interoperate with other decentralized identity providers and the DIF (Decentralized Identity Foundation) DID spec. DIDs allow multiple Ethereum addresses to be associated with the same 3Box, and allow for other security and usability features such as address rotation that allows users to change their Ethereum address without losing all of their data.
-
-### 3Box Caching Service
-[`3box-caching-service`](https://www.github.com/3box/3box-caching-service) is a server-side caching service for the pinning server that improves performance of the 3Box.js API. The caching service is optional, but is enabled by default.
 
 ## 3Box Profiles Application
 The [3box.io](https://3box.io) dapp is how users manage their 3Box data, including profile information and other.
