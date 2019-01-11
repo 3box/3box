@@ -35,7 +35,7 @@
 The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/3box-js), a distributed user data network, and the [3Box Profiles App](https://3box.io).
 
 ## 3Box.js API
-[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API is available via a REST API and a GraphQL endpoint.
+[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API also features a GraphQL endpoint.
 
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
 
