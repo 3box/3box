@@ -1,4 +1,4 @@
-![3Box Logo](./3Box_widelogo.png)
+![3Box Logo](./images/3Box_widelogo.png)
 
 # 3Box
 [![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=for-the-badge&label=Twitter)](https://twitter.com/3boxdb)
@@ -9,7 +9,7 @@
 
 <br>
 
-[![button](./3box_button_community.png)](https://discord.gg/dxjM74J)
+[![button](./images/3box_button_community.png)](https://discord.gg/dxjM74J)
 
 <br>
 
@@ -69,15 +69,9 @@ The [3box.io](https://3box.io) dapp is how users manage their 3Box data, includi
 
 <br>
 
-# More Information
-
 ## Project Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 * Provide a decentralized system, but pragmatically utilize centralized components to facilitate the transition
-
-## Other Resources
-* Here's a [list of proposed improvements](./IMPROVEMENTS.md)
-* Here's a [GDrive with other documents](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
 
