@@ -29,7 +29,7 @@
 
 🛠 Want to contribute to the project? View our [contributors guide](./CONTRIBUTING.md)
 
-➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./COMMUNITY-PROJECTS.md)
+➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./community/projects.md)
 
 📜 Want to propose an improvement? [Create a 3IP](./3IPs/3ip-0.md)
 
@@ -68,6 +68,9 @@ The [3box.io](https://3box.io) dapp is how users manage their 3Box data, includi
 
 ### 3Box Verifications
 [`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their Github and Twitter social accounts and link them to their 3Box profile. The verifications issued by this service are DID-compatible verifiable claims in the form of JWTs.
+
+### Service endpoints
+There is an overview of all 3box service endpoints [here]()
 
 <br>
 

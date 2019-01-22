@@ -64,7 +64,7 @@ or you can [download the Zenhub browser extension](https://www.zenhub.com/extens
 
 ## Best Practices
 
-[Click here for repo best practices.](./REPO-BEST-PRACTICES.md)
+[Click here for repo best practices.](./devops/repo-best-practices.md)
 
 * Dont leave things in done if you are on the core team, since you have the power to take it to closed!
 

@@ -3,6 +3,7 @@ Welcome to the 3Box Dapp Universe! This document is dedicated to listing project
 
 ## Add your Project
 To add your project to this list, just submit a PR to this document adding your project. We will review projects before merging to ensure everything looks good!
+Also feel free to add your keys to the [key conventions](./key-conventions.md) document.
 
 ## Dapps
 
