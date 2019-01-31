@@ -1,4 +1,4 @@
-![3Box Logo](./3Box_widelogo.png)
+![3Box Logo](./images/3Box_widelogo.png)
 
 # 3Box
 [![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=for-the-badge&label=Twitter)](https://twitter.com/3boxdb)
@@ -9,7 +9,7 @@
 
 <br>
 
-[![button](./3box_button_community.png)](https://discord.gg/dxjM74J)
+[![button](./images/3box_button_community.png)](https://discord.gg/dxjM74J)
 
 <br>
 
@@ -21,7 +21,7 @@
 #### Developers
 👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate 3Box with your Ethereum dapp
 
-#### Community  
+#### Community
 
 💬 Join [3Box Community Discord](https://discord.gg/Z3f3Cxy) to chat with the core team and developer community
 
@@ -29,7 +29,9 @@
 
 🛠 Want to contribute to the project? View our [contributors guide](./CONTRIBUTING.md)
 
-➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./COMMUNITY-PROJECTS.md)
+➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./community/projects.md)
+
+📜 Want to propose an improvement? [Create a 3IP](./3IPs/3ip-0.md)
 
 <br>
 
@@ -67,17 +69,14 @@ The [3box.io](https://3box.io) dapp is how users manage their 3Box data, includi
 ### 3Box Verifications
 [`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their Github and Twitter social accounts and link them to their 3Box profile. The verifications issued by this service are DID-compatible verifiable claims in the form of JWTs.
 
+### Service Endpoints
+There is an overview of all 3box service endpoints [here](./devops/service-endpoints.md)
+
 <br>
 
-# More Information
-
-## Project Goals
+# Project Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 * Provide a decentralized system, but pragmatically utilize centralized components to facilitate the transition
-
-## Other Resources
-* Here's a [list of proposed improvements](./IMPROVEMENTS.md)
-* Here's a [GDrive with other documents](https://drive.google.com/drive/folders/16lZWMVFLKLk2nAZJQ7xQyzHKZzK734Ov?usp=sharing)
 

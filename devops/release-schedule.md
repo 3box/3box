@@ -6,7 +6,7 @@ All of the time-frame release process share a same goal. They deliver a certain 
 
 # Component breakdown
 
-![component breakdown](./release_components.png)
+![component breakdown](./images/release_components.png)
 
 ## **Libraries**
 

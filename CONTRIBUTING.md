@@ -62,20 +62,9 @@ For our kanban or organization board we use **Zenhub.**
 To view our active work, you can [view the 3Box project board](https://app.zenhub.com/workspace/o/uport-project/3box/boards?repos=139279908,146687169,146688532,145592766,145133349)
 or you can [download the Zenhub browser extension](https://www.zenhub.com/extension) to have the project board injected more natively into Github on Chrome or Firefox.
 
-## Routines
-
-### 2 week sprints
-You can see the objectives for each sprint cycle [here](./SPRINTS.md)
-
-### Daily Standups
-
-### Sprint Planning
-
-### Review and Retro
-
 ## Best Practices
 
-[Click here for repo best practices.](./REPO-BEST-PRACTICES.md)
+[Click here for repo best practices.](./devops/repo-best-practices.md)
 
 * Dont leave things in done if you are on the core team, since you have the power to take it to closed!
 

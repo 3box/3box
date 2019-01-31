@@ -47,7 +47,7 @@ Optionally we can add an index of encrypted keys to the db.
 ## How it Works
 Here's a technical walk thorough of how the system works.
 
-![3Box Architecture Diagram](./3box_architecture_diagram.png)
+![3Box Architecture Diagram](./images/3box_architecture_diagram.png)
 
 ### Creating a user profile
 
