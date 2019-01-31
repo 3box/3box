@@ -21,7 +21,7 @@
 #### Developers
 👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate 3Box with your Ethereum dapp
 
-#### Community  
+#### Community
 
 💬 Join [3Box Community Discord](https://discord.gg/Z3f3Cxy) to chat with the core team and developer community
 
@@ -69,12 +69,12 @@ The [3box.io](https://3box.io) dapp is how users manage their 3Box data, includi
 ### 3Box Verifications
 [`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their Github and Twitter social accounts and link them to their 3Box profile. The verifications issued by this service are DID-compatible verifiable claims in the form of JWTs.
 
-### Service endpoints
+### Service Endpoints
 There is an overview of all 3box service endpoints [here](./devops/service-endpoints.md)
 
 <br>
 
-## Project Goals
+# Project Goals
 * Make it easy for users to share information publicly, while preserving privacy when desired
 * Improve the onboarding experience for decentralized applications by making it easy for developers to get information about Ethereum users
 * Improve Ethereum usability with distributed database infrastructure that works in production today

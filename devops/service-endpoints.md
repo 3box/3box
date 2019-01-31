@@ -1,6 +1,6 @@
-# 3Box service endpoints
+# 3Box Service Endpoints
 
-3Box provides a set of services that makes the 3Box network more resilient. Here all of the service endpoints are documented. To see APIs and documentation please refer to the repo for the given service.
+3Box provides a set of services that make the 3Box network more resilient, convenient, scalable, and performant. Here all of the service endpoints are documented. To see APIs and documentation please refer to the repo for the given service.
 
 ## 3box-verifications
 * Branch `master` is deployed to: `verifications.3box.io`
