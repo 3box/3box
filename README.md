@@ -36,12 +36,15 @@
 <br>
 
 # 3Box Overview
-The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/3box-js), a distributed user data network, and the [3Box Profiles App](https://3box.io).
+The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/3box-js), a distributed user data pinning network, and the [3Box Profiles App](https://3box.io).
 
 ## 3Box.js API
-[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API also features a GraphQL endpoint.
+[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the full functionality of the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API features the ability for users to encrypt their data, and allows applications to store data in an app-specific storage location, called a Space. The 3Box.js API also features a GraphQL endpoint.
 
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
+
+## 3Box Profile Hovers
+[`profile-hover`](https://github.com/3box/profile-hover) is the easiest way to replace hexadecimal addresses in your app's UI with 3Box profile information. Profile hover is a simple JavaScript plugin that allows applications to easily get profile data for ethereum users from the 3Box network, in order to populate their application with social profile information displayed in a hover overlay. Profile hovers are fully configurable, and integration requires only 2 lines of code. Hovers are especially great for leaderboard-type and discover-based social applications that display many addresses on screen at once.
 
 ## 3Box Data Network
 The 3Box user data network consists of a few core components: a data [pinning server](https://www.github.com/3box/3box-pinning-server), an [address server](https://www.github.com/3box/3box-address-server), and an [identity model](https://github.com/3box/muport-core-js). Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances on IPFS. 
