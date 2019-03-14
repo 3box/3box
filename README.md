@@ -49,7 +49,7 @@ The 3Box user data storage network primarily consists of three main components:
 Useful for: 
 * getting/saving public and encrypted data from/to a user's profile 
 * getting/saving public and encrypted data from/to a user's spaces
-* getting/saving public and encrypted data from/to a user's comment threads
+* getting/saving public data from/to a user's comment threads
 
 ### 3Box GraphQL API
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
