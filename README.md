@@ -5,7 +5,7 @@
 [![Discord](https://img.shields.io/discord/484729862368526356.svg?style=for-the-badge)](https://discordapp.com/invite/Z3f3Cxy)
 
 
-3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users and set/get data from their profile.
+3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their profile, and support decentralized comments and other communication.
 
 <br>
 
@@ -36,14 +36,36 @@
 <br>
 
 # 3Box Overview
-The 3Box system primarily consists of the [3Box.js API](https://github.com/3box/3box-js), a distributed user data network, and the [3Box Profiles App](https://3box.io).
+The 3Box user data storage network primarily consists of three main components:
+* [3Box.js API](https://github.com/3box/3box-js): developer interface for setting/getting data
+* Data pinning network: distributed network for pinning data on OrbitDB/IPFS
+* [Profiles App](https://3box.io): user interface for managing profiles and data
 
-## 3Box.js API
-[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API also features a GraphQL endpoint.
+## Developer Tools
 
+### 3Box.js API
+[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the full functionality of the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API features the ability for users to encrypt their data, and allows applications to store data in an app-specific storage location, called a Space. The 3Box.js API also features a GraphQL endpoint.
+
+Useful for: 
+* getting/saving public and encrypted data from/to a user's profile 
+* getting/saving public and encrypted data from/to a user's spaces
+* getting/saving public data from/to a user's comment threads
+
+### 3Box GraphQL API
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
 
+Useful for: 
+* efficiently getting information from a user's public profile
+
+### 3Box Profile Hovers
+[`profile-hover`](https://github.com/3box/profile-hover) is the easiest way to replace hexadecimal addresses in your app's UI with 3Box profile information. Profile hover is a simple JavaScript plugin that allows applications to easily get profile data for ethereum users from the 3Box network, in order to populate their application with social profile information displayed in a hover overlay. Profile hovers are fully configurable, and integration requires only 2 lines of code. Hovers are especially great as a social overlay for leaderboard-type and discover-based social apps that display many user addresses on screen at once.
+
+Useful for:
+* easily replacing hexadecimal addresses in your app's UI with social profile data
+
 ## 3Box Data Network
+
+### 3Box Data Network
 The 3Box user data network consists of a few core components: a data [pinning server](https://www.github.com/3box/3box-pinning-server), an [address server](https://www.github.com/3box/3box-address-server), and an [identity model](https://github.com/3box/muport-core-js). Together these components are used to keep track of user data stored in [`orbit-db`](https://github.com/orbitdb/orbit-db) instances on IPFS. 
 
 We assume that end-users have a web3-compatible browser or wallet (such as MetaMask or Status) which supports personal_sign. This is how users authenticate dapps to their 3Box. Learn more about the [3Box architecture and how we do access control with encryption](./ARCHITECTURE.md).
@@ -57,17 +79,19 @@ We assume that end-users have a web3-compatible browser or wallet (such as MetaM
 ### 3Box Identity
 [`muport-core-js`](https://github.com/3box/muport-core-js) is a library that lets us associate a users 3Box and data with a lightweight muport DID (decentralized identity) rather than directly to an Ethereum address. This abstraction allows our system to interoperate with other decentralized identity providers and the DIF (Decentralized Identity Foundation) DID spec. DIDs allow multiple Ethereum addresses to be associated with the same 3Box, and allow for other security and usability features such as address rotation that allows users to change their Ethereum address without losing all of their data.
 
-## 3Box Profiles Application
-The [3box.io](https://3box.io) dapp is how users manage their 3Box data, including profile information and other.
+## User Tools
 
-### 3Box Web App
+### 3Box Profiles Application
+The [3box.io](https://3box.io) app is how users manage their 3Box data, including profile information, public activity, collectibles, and more.
+
+#### Web App
 [`3box-dapp`](https://www.github.com/3box/3box-dapp) is a [web interface](https://3box.io/) that allows users to interact with their 3Box profile. The 3Box app works with all standard desktop and mobile web3 browsers including MetaMask, Status, Coinbase Wallet, and others.
 
-### Activity Feed
+#### Activity Feed
 [`3box-activity`](https://www.github.com/3box/3box-activity) is an API that makes it easy to construct activity feeds for Ethereum users. Part of Ethereum Profiles on the 3Box web app.
 
-### 3Box Verifications
-[`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their Github and Twitter social accounts and link them to their 3Box profile. The verifications issued by this service are DID-compatible verifiable claims in the form of JWTs.
+#### 3Box Verifications
+[`3box-verifications`](https://github.com/3box/3box-verifications) is a service that allows [3box.io](https://3box.io) users to verify their email address, as well as their Github and Twitter social accounts and link them to their 3Box profile. The verifications issued by this service are DID-compatible verifiable claims in the form of JWTs.
 
 ### Service Endpoints
 There is an overview of all 3box service endpoints [here](./devops/service-endpoints.md)
