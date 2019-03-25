@@ -11,10 +11,6 @@
 * Branch `master` is deployed to: `ipfs.3box.io`
 * Branch `develop` is deployed to: `ipfs-dev.3box.io`
 
-### cache service
-* Branch `master` is deployed to: `cache.3box.io`
-* Branch `develop` is deployed to: `cache-dev.3box.io`
-
 ## 3box-graphql
 * Branch `master` is deployed to: `api.3box.io/graph/`
 * Branch `develop` is deployed to: `api-dev.3box.io/graph/`
