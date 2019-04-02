@@ -5,7 +5,7 @@
 [![Discord](https://img.shields.io/discord/484729862368526356.svg?style=for-the-badge)](https://discordapp.com/invite/Z3f3Cxy)
 
 
-3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their profile, and support decentralized comments and other communication.
+3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their general profile and other application-specific datastores, and support decentralized comments and other messaging in their app.
 
 <br>
 
@@ -13,15 +13,15 @@
 
 <br>
 
-### Getting Started
+## Getting Started
 
-#### Users
+### Users
 👤 Create or sign in to your web3 social profile at [3box.io](https://3box.io)
 
-#### Developers
-👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate 3Box with your Ethereum dapp
+### Developers
+👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized **Profiles**, **Storage**, or **Messaging/Comments** to your application
 
-#### Community
+### Community
 
 💬 Join [3Box Community Discord](https://discord.gg/Z3f3Cxy) to chat with the core team and developer community
 
@@ -43,19 +43,23 @@ The 3Box user data storage network primarily consists of three main components:
 
 ## Developer Tools
 
-### 3Box.js API
-[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the full functionality of the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API features the ability for users to encrypt their data, and allows applications to store data in an app-specific storage location, called a Space. The 3Box.js API also features a GraphQL endpoint.
+### 3Box.js
+[`3box-js`](https://www.github.com/3box/3box-js) is a client-side JavaScript library and API that allows applications to integrate with the full functionality of the 3Box data network. The 3Box.js API allows developers to read, write, and delete public and private data associated with the user. This library can be used to get profile information about an address, set profile information about an address, and onboard users. The 3Box.js API features the ability for users to encrypt their data, and allows applications to store data in an app-specific storage location, called a Space, and in peer-to-peer message feeds, called Threads. The 3Box.js API also features a GraphQL endpoint.
 
-Useful for: 
-* getting/saving public and encrypted data from/to a user's profile 
-* getting/saving public and encrypted data from/to a user's spaces
-* getting/saving public data from/to a user's comment threads
+#### Profiles API
+The Profiles API is a developer interface for creating and interacting with a user's profile, including getting, setting, and removing data. 3Box Profiles are great for storing and accessing general profile information such as name and image, basic affiliations, basic reputation, and other bits of information that you desire to easily share across all apps that a user accesses with 3Box. Public profile information is made available for all to read via the getProfile() method, while encrypted profile information is available only after the user signs a general consent message, which happens every time when logging in.
+
+#### Spaces API
+The Spaces API is a developer interface for creating and interacting with appliation-specific datastores inside of a user's 3Box, including getting, setting, and removing data. 3Box Spaces are great for storing and accessing specific, more sensitive information such as app settings and defaults, app-specific content, sensitive information, and other bits of data that developers desire to protect to a greater degree than if it were stored in the general profile where it would be available to all apps. Data within Spaces can still be shared between applications however. Public spaces information is made available for all to read via the getSpace() method, while encrypted spaces information is available only after the user signs a space consent message. Spaces must be explicitly requested by the developer and are not accessed by default upon logging in. This helps protect users' information privacy.
+
+#### Threads API
+The Threads API is a developer interface for creating and interacting with decentralized messaging threads, including creating a thread, posting in a thread, and getting posts in a thread. 3Box Threads are great for storing peer-to-peer messages in a log/feed format between one or multiple users. Use cases for threads include commenting systems, group and direct messaging systems, content-based social media functionalities, and storing lists of items. The current version of the Threads API is still experimental and does not support private (encrypted) threads or moderation.
 
 ### 3Box GraphQL API
 [`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
 
 Useful for: 
-* efficiently getting information from a user's public profile
+* efficiently getting common information from a user's public profile
 
 ### 3Box Profile Hovers
 [`profile-hover`](https://github.com/3box/profile-hover) is the easiest way to replace hexadecimal addresses in your app's UI with 3Box profile information. Profile hover is a simple JavaScript plugin that allows applications to easily get profile data for ethereum users from the 3Box network, in order to populate their application with social profile information displayed in a hover overlay. Profile hovers are fully configurable, and integration requires only 2 lines of code. Hovers are especially great as a social overlay for leaderboard-type and discover-based social apps that display many user addresses on screen at once.
