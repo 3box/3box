@@ -27,6 +27,11 @@ Ongoing
 #### Meridio
 Ongoing
 
+### Mapping
+
+#### FOAM Map
+The [FOAM Map](http://map.foam.space) is a decentralized map of the world. The [FOAM Map leaderboard](https://map.foam.space/leaderboard) has integrated 3Box profiles for Cartographer addresses. The integration with 3Box allows Cartographers to create and manage an optional social profile, which appears on the leaderboard automatically, showing a profile picture, name, location and more.
+
 ## Dev Tools
 
 ### Frameworks
