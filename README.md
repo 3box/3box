@@ -3,6 +3,7 @@
 # 3Box
 [![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=for-the-badge&label=Twitter)](https://twitter.com/3boxdb)
 [![Discord](https://img.shields.io/discord/484729862368526356.svg?style=for-the-badge)](https://discordapp.com/invite/Z3f3Cxy)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F3box%2F3box.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F3box%2F3box?ref=badge_shield)
 
 
 3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their general profile and other application-specific datastores, and support decentralized comments and other messaging in their app.
@@ -108,3 +109,7 @@ There is an overview of all 3box service endpoints [here](./devops/service-endpo
 * Improve Ethereum usability with distributed database infrastructure that works in production today
 * Provide a decentralized system, but pragmatically utilize centralized components to facilitate the transition
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F3box%2F3box.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F3box%2F3box?ref=badge_large)
