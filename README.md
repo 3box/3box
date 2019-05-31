@@ -9,7 +9,7 @@
 
 <br>
 
-[![button](./images/3box_button_community.png)](https://chat.3box.io/)
+[![button](./images/3box_button_community.png)](https://discord.gg/Z3f3Cxy)
 
 <br>
 
