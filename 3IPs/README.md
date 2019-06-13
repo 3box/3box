@@ -21,5 +21,5 @@ Simply copy [3ip-X.md](./3ip-X.md) and start writing. Once your proposal is read
 | [Threads](./3ip-2.md) | Draft |
 | [3ID HD Path](./3ip-3.md) | Draft |
 | [3ID the 3Box Identity System](./3ip-4.md) | Draft |
-| [Contract Wallet Account Linking](./3ip-5.md) | Draft |
+| [Address Linking](./3ip-5.md) | Draft |
 | [Authentication methods](./3ip-6.md) | Draft |
