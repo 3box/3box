@@ -18,7 +18,7 @@ Simply copy [3ip-X.md](./3ip-X.md) and start writing. Once your proposal is read
 | Name | Status |
 | -- | -- |
 | [Spaces](./3ip-1.md) | Final |
-| [Threads](./3ip-2.md) | Draft |
+| [Threads](./3ip-2.md) | Final |
 | [3ID HD Path](./3ip-3.md) | Draft |
 | [3ID the 3Box Identity System](./3ip-4.md) | Draft |
 | [Address Linking](./3ip-5.md) | Draft |
