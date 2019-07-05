@@ -24,3 +24,4 @@ Simply copy [3ip-X.md](./3ip-X.md) and start writing. Once your proposal is read
 | [Address Linking](./3ip-5.md) | Draft |
 | [Authentication Methods](./3ip-6.md) | Draft |
 | [IdentityWallet SDK](./3ip-7.md) | Draft |
+| [HD Path Simple Account Migration](./3ip-8.md) | Draft |
