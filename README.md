@@ -56,7 +56,7 @@ The Spaces API is a developer interface for creating and interacting with applia
 The Threads API is a developer interface for creating and interacting with decentralized messaging threads, including creating a thread, posting in a thread, and getting posts in a thread. 3Box Threads are great for storing peer-to-peer messages in a log/feed format between one or multiple users. Use cases for threads include commenting systems, group and direct messaging systems, content-based social media functionalities, and storing lists of items. The current version of the Threads API is still experimental and does not support private (encrypted) threads or moderation.
 
 ### 3Box GraphQL API
-[`3box-graphql`](https://github.com/3box/3box-js-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
+[`3box-graphql`](https://github.com/3box/3box-graphql) is a GraphQL endpoint that allows developers to write more efficient 3Box.js getProfile() queries. Now developers can ask our API for specific common user profile fields instead of needing to return the entire profile. For example, this is useful when querying for name and image for hundreds or thousands of profiles at once.
 
 Useful for: 
 * efficiently getting common information from a user's public profile
