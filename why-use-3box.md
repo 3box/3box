@@ -32,5 +32,5 @@ In addition to enabling data portability across apps, networks, and services, (a
 
 Developers should integrate these core API functionalities into their project using one of our SDKs. 3Box.js is a JavaScript SDK that delivers the full suite of 3Box APIs to web applications. IdentityWallet.js is a JavaScript SDK that exposes Identity and Authentication functionalities directly to third-party crypto wallets.
 
-### Users don't need to install software
+### ✅ Users don't need to install software
 Our JavaScript SDKs enable applications to run 3Box directly in the user's browser or wallet, and users don't need to install any software to use 3Box. In fact, users may barely even know that they're using 3Box since many of the system's operations can be managed in the background of your application.
