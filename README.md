@@ -1,11 +1,11 @@
 ![3Box Logo](./images/3Box_widelogo.png)
 
-# 3Box
+# Welcome to [3Box](https://3box.io)!
 [![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=for-the-badge&label=Twitter)](https://twitter.com/3boxdb)
 [![Discord](https://img.shields.io/discord/484729862368526356.svg?style=for-the-badge)](https://discordapp.com/invite/Z3f3Cxy)
 
 
-3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their general profile and other application-specific datastores, and support decentralized comments and other messaging in their app.
+3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io/hub) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their general profile and other application-specific datastores, and support decentralized comments and other messaging in their app.
 
 <br>
 
@@ -16,10 +16,10 @@
 ## Getting Started
 
 ### Users
-👤 Create or sign in to your web3 social profile at [3box.io](https://3box.io)
+👤 Manage your web3 profile and storage drive at [3Box Hub](https://3box.io/hub)
 
 ### Developers
-👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized **Profiles**, **Storage**, or **Messaging/Comments** to your application
+👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized **identity**, **auth**, **profiles**, **storage**, and **messaging** to your web app.
 
 ### Community
 
