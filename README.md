@@ -19,8 +19,8 @@
 👤 Visit [3Box Hub](https://3box.io/hub) to manage your web3 profile and storage drive
 
 ### Developers
- Visit our documentation site to learn more about our
-👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized **identity**, **auth**, **profiles**, **storage**, and **messaging** to your web app.
+📘 Visit our [documentation site](https://docs.3box.io) to learn more about the 3Box [network](https://docs.3box.io/why-3box), [JavaScript SDK](https://docs.3box.io/build/web-apps), and [APIs](https://docs.3box.io/products)
+👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized identity, auth, profiles, storage, and messaging to your web app.
 
 ### Community
 
