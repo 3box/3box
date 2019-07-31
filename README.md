@@ -23,7 +23,7 @@
 
 👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized identity, auth, profiles, storage, and messaging to your web app.
 
-### Community
+## Stay in Touch
 
 💬 Join [3Box Community Discord](https://discord.gg/Z3f3Cxy) to chat with the core team and developer community
 
