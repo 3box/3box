@@ -5,7 +5,7 @@
 [![Discord](https://img.shields.io/discord/484729862368526356.svg?style=for-the-badge)](https://discordapp.com/invite/Z3f3Cxy)
 
 
-3Box is a distributed user data network that supports public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide a [social profiles dapp](https://3box.io/hub) that allows users to create and manage their profile and a web3 [developer API](https://github.com/3box/3box-js) that makes it easy to onboard users, set/get data from their general profile and other application-specific datastores, and support decentralized comments and other messaging in their app.
+3Box is the best way for developers to manage user data without operating a backend server. The 3Box distributed user data network supports keeping public and private data for Ethereum users. All data is publicly available, but private data can only be decrypted by dapps that the user has given explicit permission. We provide [3Box Hub](https://3box.io/hub), an app that allows users to manage their profile and personal storage drive, as well as a [JavaScript SDK](https://github.com/3box/3box-js) that makes it easy for developers to add decentralized identity, auth, profiles, storage, and messaging to their web application.
 
 <br>
 
@@ -16,9 +16,10 @@
 ## Getting Started
 
 ### Users
-👤 Manage your web3 profile and storage drive at [3Box Hub](https://3box.io/hub)
+👤 Visit [3Box Hub](https://3box.io/hub) to manage your web3 profile and storage drive
 
 ### Developers
+ Visit our documentation site to learn more about our
 👩‍💻 Explore [`3box-js`](https://www.github.com/3box/3box-js) to integrate decentralized **identity**, **auth**, **profiles**, **storage**, and **messaging** to your web app.
 
 ### Community
