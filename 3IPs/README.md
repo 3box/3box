@@ -26,3 +26,4 @@ Simply copy [3ip-X.md](./3ip-X.md) and start writing. Once your proposal is read
 | [IdentityWallet SDK](./3ip-7.md) | Draft |
 | [HD Path Simple Account Migration](./3ip-8.md) | Draft |
 | [Ghost Chat](./3ip-9.md) | Draft |
+| [3ID JSON-RPC](./3ip-10.md) | Draft |
