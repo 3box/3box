@@ -33,7 +33,7 @@
 
 ➡️ Have you integrated 3Box? [Add your project to 3Box Dapp Universe](./community/projects.md)
 
-📜 Want to propose an improvement? [Create a 3IP](./3IPs/3ip-0.md)
+📜 Want to propose an improvement? [Create a 3IP](./3IPs/README.md)
 
 <br>
 
