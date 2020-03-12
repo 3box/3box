@@ -84,7 +84,7 @@ or you can [download the Zenhub browser extension](https://www.zenhub.com/extens
         - PATCH: when you make backwards compatible bug fixes.
 2. Create a release branch off `develop` named `release/v<version-number>`
 3. Prepare the relase:
-    1. Add release notes. Make sure it includes *all* changes that are being applied (not just your latest work)
+    1. Add release notes to `RELEASE-NOTES.md`. Make sure it includes *all* changes that are being applied (not just your latest work)
     2. Log the new version number (usually in `package.json`). If it's an npm package, regenerate the package lockfile to also apply the version change there.
 4. Push the branch and open a PR against `master`
 5. Merging into `master` will deploy against production, so let the dev team know, and get the PR approved.
