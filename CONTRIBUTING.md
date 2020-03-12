@@ -72,4 +72,28 @@ or you can [download the Zenhub browser extension](https://www.zenhub.com/extens
 
 * Submit issues and PRs in the appropriate 3Box repo (we use this one as a project hub)
 
+## Project Owners
 
+### Creating a release
+
+1. Determine what kind of release you are creating:
+    1. Look at all the changes that will be applied with `git diff develop master` and `git log`. If you need help understanding the impact of other contributors' work, ping them.
+    2. Version increment according to semver:
+        - MAJOR: when you make incompatible API changes
+        - MINOR: when you add functionality in a backwards compatible manner, and
+        - PATCH: when you make backwards compatible bug fixes.
+2. Create a release branch off `develop` named `release/v<version-number>`
+3. Prepare the relase:
+    1. Add release notes. Make sure it includes *all* changes that are being applied (not just your latest work)
+    2. Log the new version number (usually in `package.json`). If it's an npm package, regenerate the package lockfile to also apply the version change there.
+4. Push the branch and open a PR against `master`
+5. Merging into `master` will deploy against production, so let the dev team know, and get the PR approved.
+6. Merge the PR, and once it's deployed (watch progress through CI), test it out (for example, by using the example server against production) to make sure everything looks good.
+    1. If anything goes wrong, rollback by going into CI, finding the previous working build of `master` and rerunning the job.
+    2. **This is a temporary fix that gives you time to analyze what went wrong** - if it's related to the release, you need to remove the code from the `master` branch with a revert.
+7. If it all looks good, pull the master branch locally and create a version tag with `git tag -a v<version-number> -m "release v<version-number"`
+8. Push the tag with `git push --tags <tag-name>`
+9. Apply the release to the develop branch:
+    1. check out `develop`
+    2. `git merge master`
+    3. `git push`
